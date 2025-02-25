@@ -332,7 +332,7 @@
         align-items: center;
         color: white;
         box-shadow: rgba(255, 255, 255, 0.092) 0px 5px 2px;
-        background-color: rgba(253, 252, 252, 0.066);
+        background-color: rgba(45, 44, 44, 0.066);
         overflow: hidden;
     }
     
@@ -1893,18 +1893,35 @@
             position: fixed;
             height: 70px;
         }
+        #menuList {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            justify-content: flex-start;
+            top: 70px;
+            left: -200px;
+            height: 100%;
+            background-color: rgb(2, 49, 44, 0.8);
+            width: 200px;
+            overflow: hidden;
+            transition: all 0.5s ease-in-out;
+            color: white;
+        }
         .navdiv {
             margin-right: 10px;
         }
         ul {
             padding: 7px;
+            color: white;
         }
         li {
             margin-left: 20px;
             white-space: nowrap;
+            color: white;
+            padding: 20px;
         }
         li a {
-            color: var(--secondary-color);
+            color: var(--main-color);
             font-size: 10px;
         }
         li a:hover {
@@ -1922,6 +1939,7 @@
             padding: 3px;
             width: 70px;
             white-space: nowrap;
+            margin-left: 200px;
         }
         .logo {
             height: 70px;
@@ -2197,6 +2215,24 @@
             margin-top: 160px;
             max-width: 480px;
             gap: 2;
+        }
+        .menu-icon .fa-bars {
+            font-size: 17px;
+            color: #02312c;
+            display: block;
+            cursor: pointer;
+            ;
+        }
+        .menu-icon {
+            display: block;
+            color: #02312c;
+            margin-right: 10px;
+        }
+        .fa-xmark {
+            visibility: visible;
+            font-size: 26px;
+            margin-left: 150px;
+            color: white;
         }
     }
     /* for iphone se older phones*/
