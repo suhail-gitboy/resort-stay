@@ -1,576 +1,47 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
-* {
-    margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: poppins, sans-serif;
-    scroll-behavior: smooth;
-    scroll-padding: 4rem;
-}
-
-html {
-    height: 100%;
-}
-
-body {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
- :root {
-    --main-color: white;
-    --secondary-color: #02312c;
-    --transparent-color: rgb(110, 135, 104);
-}
-
-.navbar {
-    font-family: poppins, sans-serif;
-    font-size: 20px;
-    padding-left: 15px;
-    padding-right: 20px;
-    position: fixed;
-    width: 100%;
-    background-color: white;
-    z-index: 999;
-}
-
-.navdiv {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    list-style-type: none;
-    align-items: center;
-}
-
-li {
-    margin-left: 50px;
-    white-space: nowrap;
-}
-
-li a {
-    color: var(--secondary-color);
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
-    letter-spacing: 0.7px;
-}
-
-li a:hover {
-    text-shadow: 1px 1px 2px var(--secondary-color);
-}
-
-button {
-    border-radius: 8px;
-    transition-duration: 0.4s;
-    padding: 10px;
-    width: 90px;
-    border: var(--secondary-color) solid;
-    background: var(--secondary-color);
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-button a {
-    color: white;
-    font-weight: 600;
-    transition: 0.2s;
-}
-
-button:hover {
-    opacity: 0.7;
-}
-
-button a:hover {
-    opacity: 0.7;
-}
-
-.section1 {
-    height: 100vh;
-    width: 100%;
-}
-
-.logo {
-    height: 110px;
-    width: 190px;
-}
-
-.images {
-    width: 100%;
-    display: flex;
-    scroll-snap-type: x mandatory;
-    padding: 10px;
-    gap: 5px;
-    overflow: auto;
-}
-
-.images img {
-    margin: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
-}
-
-.images img {
-    scroll-snap-align: start;
-    height: 500px;
-    width: 400px;
-    flex: 0 0 100%;
-}
-
-.main {
-    width: 100%;
-    height: 50%;
-}
-
-.second {
-    width: 400px;
-    height: 400px;
-}
-
-.contents {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-}
-
-.contents h1 {
-    padding: 40px;
-    font-size: 60px;
-    font-family: poppins, sans-serif;
-    color: var(--secondary-color);
-}
-
-.h2 {
-    color: var(--secondary-color);
-    text-align: center;
-    letter-spacing: 10px;
-    font-size: 25px;
-    font-family: poppins;
-}
-
-.para1 {
-    text-align: center;
-    padding: 50px;
-    font-weight: 700;
-    letter-spacing: 5px;
-    font-family: poppins;
-    color: var(--secondary-color);
-}
-
-.section2 {
-    display: block;
-    height: 100vh;
-    width: 100%;
-    margin-top: 220px;
-}
-
-.maindiv {
-    justify-items: center;
-}
-
-.maindiv .para2 {
-    width: 60%;
-    color: var(--secondary-color);
-    font-size: 25px;
-    font-family: poppins;
-    text-align: center;
-    padding: 30px;
-}
-
-.form {
-    margin-top: 100px;
-    width: 100%;
-    height: 130%;
-    display: flex;
-    justify-content: center;
-    background-image: url(/images/img2.JPG);
-}
-
-form {
-    margin-top: 200px;
-    background-size: 600px 600px;
-    height: 600px;
-    width: 600px;
-    background-color: rgb(11, 11, 11, 0.6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    vertical-align: center;
-    border: solid rgb(0, 24, 3, 0.3) 2px;
-    border-radius: 30px;
-}
-
-.form input {
-    height: 40px;
-    width: 300px;
-    border-radius: 15px;
-    border: solid rgb(255, 251, 251);
-    text-align: center;
-    margin: 30px;
-}
-
-footer {
-    margin-top: auto;
-    background-color: black;
-    width: 100%;
-    height: 220px;
-    box-shadow: 5px 4px 8px 08px rgba(1, 1, 1, .2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
-}
-
-.button1 {
-    border: solid 3px white;
-    color: wheat;
-    font-size: 30px;
-    width: 130px;
-    transition: none;
-}
-
-.footerContainer {
-    width: 100%;
-    padding-top: 40px;
-}
-
-.socialicons {
-    display: flex;
-    justify-content: center;
-}
-
-.socialicons a {
-    text-decoration: none;
-    padding: 10px;
-    background-color: aliceblue;
-    margin: 10px;
-    border-radius: 50%;
-}
-
-.socialicons a i {
-    font-size: 1.2rem;
-    color: black;
-    opacity: 0.9;
-}
-
-.socialicons a:hover {
-    background-color: rgb(11, 11, 11);
-    transition: 0.5s;
-    color: aliceblue
-}
-
-.socialicons a i:hover {
-    color: aliceblue;
-    transition: 0.5s;
-}
-
-.footernav ul {
-    display: flex;
-    justify-content: center;
-}
-
-.footernav ul li a {
-    color: white;
-    margin: 20px;
-    opacity: 0.5;
-    transition: 0.7s;
-}
-
-.footernav ul li a:hover {
-    opacity: 1;
-}
-
-.footerbottom {
-    background-color: black;
-    padding: 10px;
-    text-align: center;
-}
-
-.footerbottom p {
-    color: white;
-}
-
-.designer {
-    opacity: 0.8;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500;
-    margin-left: 5px;
-}
-
-.contactusdiv {
-    margin-top: 600px;
-    height: 170vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
-}
-
-.contacth1 {
-    text-align: center;
-    font-family: poppins, sans-serif;
-    letter-spacing: 20px;
-    color: white;
-    margin: 20px;
-    font-size: 20px;
-}
-
-.subcontact {
-    background-color: rgba(253, 252, 252, 0.066);
-    width: 55%;
-    height: 122vh;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    overflow: hidden;
-    box-shadow: rgba(255, 255, 255, 0.092) 0px 5px 2px;
-}
-
-.imgabout {
-    width: 100%;
-    height: 700px;
-}
-
-.contactpara {
-    font-size: 17px;
-    width: 700px;
-    height: 500px;
-    font-family: poppins, serif;
-    text-align: center;
-}
-
-.highlights {
-    height: 80vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #111111;
-    margin-bottom: 30px;
-    box-shadow: 5px 4px 8px 08px rgba(1, 1, 1, .2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
-}
-
-.highlightsheading {
-    font-family: poppins;
-    margin-bottom: 40px;
-    color: var(--main-color);
-}
-
-.forbooking {
-    height: 130vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(/images/img.9.JPG);
-    background-size: 100% 100%;
-    box-shadow: 5px 4px 8px 08px rgba(1, 1, 1, .2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 30px;
-}
-
-h2 {
-    opacity: 0.7;
-    text-align: center;
-    font-family: poppins;
-    font-size: 70px;
-    letter-spacing: 20px;
-    color: var(--main-color);
-    transition: 4s;
-}
-
-h2:hover {
-    opacity: 2.2;
-    text-shadow: 20px;
-}
-
-h3 {
-    padding: 60px;
-    text-align: center;
-    font-family: poppins;
-    font-size: 50px;
-    letter-spacing: 10px;
-    color: var(--main-color);
-    opacity: 0.8;
-    transition: 0.4s;
-}
-
-h3:hover {
-    opacity: 2.2;
-}
-
-.button3 {
-    width: 170px;
-    border: solid white 3px;
-    color: aliceblue;
-    letter-spacing: 5px;
-    font-weight: 700;
-    padding: 15px;
-    transition: 0.5;
-}
-
-.button3:hover {
-    color: #02312c;
-    font-weight: 900;
-    background-color: white;
-    border: solid 4px var(--secondary-color);
-}
-
-.location {
-    width: 100%;
-    height: 140vh;
-    background-color: black;
-}
-
-.locationpara {
-    color: white;
-    width: 450px;
-    font-size: 30px;
-    margin-right: 40px;
-    letter-spacing: 2px;
-    font-family: poppins;
-}
-
-.locationheading {
-    font-size: 40px;
-    margin-top: 80px;
-    transition: no;
-}
-
-.locationsetup {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-}
-
-iframe {
-    border-radius: 30px;
-    border: white solid 3px;
-}
-
-.details {
-    color: white;
-    display: block;
-}
-
-.feedback {
-    text-decoration: none;
-    color: var(--main-color);
-    text-align: center;
-    padding: 70px;
-    font-family: poppins;
-}
-
-.menu-icon i {
-    font-size: 25px;
-    color: var(--secondary-color);
-    display: none;
-}
-
-.menu-icon {
-    display: none;
-    margin-right: 20px;
-}
-
-
-/* WhatsApp Button */
-
-.whatsApp {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    left: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 40px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-}
-
-.my-whatsApp {
-    margin-bottom: 7px;
-}
-
-.skroller {
-    padding-block: 8px;
-    border-block: 2px solid;
-    height: 60px;
-    margin-top: 300px;
-    overflow: hidden;
-    user-select: none;
-    background-color: var(--secondary-color);
-    gap: 2rem;
-}
-
-.ulslider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: scroll 14s linear infinite;
-    gap: 2rem;
-    color: white;
-    width: 100%;
-}
-
-.skroller:first-child {
-    background-color: var(--secondary-color);
-}
-
-@keyframes scroll {
-    from {
-        transform: translate(97%);
+    @import url("https://fonts.googleapis.com/css?family=Poppins");
+    * {
+        margin: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-family: poppins, sans-serif;
+        scroll-behavior: smooth;
+        scroll-padding: 4rem;
     }
-    to {
-        transform: translate(-100%);
+    
+    html {
+        height: 100%;
     }
-}
-
-.ulslider li {
-    color: white;
-    width: 100%;
-    white-space: nowrap;
-}
-
-.ulslider li span {
-    width: 100%;
-    white-space: nowrap;
-}
-
-.fa-xmark {
-    visibility: hidden;
-}
-
-@media(max-width:1199px) {
+    
+    body {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+     :root {
+        --main-color: white;
+        --secondary-color: #02312c;
+        --transparent-color: rgb(110, 135, 104);
+    }
+    
     .navbar {
-        max-width: 1199px;
-        font-size: 18px;
-        padding-left: 10px;
-        padding-right: 16px;
+        font-family: poppins, sans-serif;
+        font-size: 20px;
+        padding-left: 15px;
+        padding-right: 20px;
         position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 999;
     }
+    
     .navdiv {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-right: 30px;
     }
+    
     ul {
         display: flex;
         justify-content: space-between;
@@ -578,132 +49,174 @@ iframe {
         list-style-type: none;
         align-items: center;
     }
+    
     li {
-        margin-left: 40px;
+        margin-left: 50px;
         white-space: nowrap;
     }
+    
     li a {
         color: var(--secondary-color);
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
         text-decoration: none;
         letter-spacing: 0.7px;
     }
+    
     li a:hover {
         text-shadow: 1px 1px 2px var(--secondary-color);
     }
-    .booking {
-        margin-left: 30px;
-    }
-    .booking a {
-        font-size: 10px;
-    }
+    
     button {
         border-radius: 8px;
         transition-duration: 0.4s;
-        padding: 6px;
-        width: 70px;
+        padding: 10px;
+        width: 90px;
         border: var(--secondary-color) solid;
         background: var(--secondary-color);
         font-weight: 600;
         transition: 0.3s;
     }
+    
+    button a {
+        color: white;
+        font-weight: 600;
+        transition: 0.2s;
+    }
+    
+    button:hover {
+        opacity: 0.7;
+    }
+    
+    button a:hover {
+        opacity: 0.7;
+    }
+    
+    .section1 {
+        height: 100vh;
+        width: 100%;
+    }
+    
     .logo {
         height: 110px;
-        width: 180px;
+        width: 190px;
     }
+    
+    .images {
+        width: 100%;
+        display: flex;
+        scroll-snap-type: x mandatory;
+        padding: 10px;
+        gap: 5px;
+        overflow: auto;
+    }
+    
     .images img {
         margin: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
     }
+    
     .images img {
         scroll-snap-align: start;
-        width: 300px;
-        height: 380px;
+        height: 500px;
+        width: 400px;
+        flex: 0 0 100%;
     }
+    
+    .main {
+        width: 100%;
+        height: 50%;
+    }
+    
     .second {
         width: 400px;
         height: 400px;
     }
-    .section1 {
-        max-width: 1199px;
-    }
-    .main {
-        max-width: 100%;
-    }
+    
     .contents {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 100px;
-        width: 100%;
     }
+    
     .contents h1 {
         padding: 40px;
-        font-size: 45px;
+        font-size: 60px;
+        font-family: poppins, sans-serif;
+        color: var(--secondary-color);
     }
+    
     .h2 {
+        color: var(--secondary-color);
         text-align: center;
-        letter-spacing: 8px;
-        font-size: 18px;
+        letter-spacing: 10px;
+        font-size: 25px;
+        font-family: poppins;
     }
+    
     .para1 {
         text-align: center;
         padding: 50px;
         font-weight: 700;
-        letter-spacing: 3px;
+        letter-spacing: 5px;
         font-family: poppins;
         color: var(--secondary-color);
     }
+    
     .section2 {
         display: block;
         height: 100vh;
         width: 100%;
-        margin-top: 180px;
+        margin-top: 220px;
     }
+    
     .maindiv {
         justify-items: center;
     }
+    
     .maindiv .para2 {
         width: 60%;
         color: var(--secondary-color);
-        font-size: 20px;
+        font-size: 25px;
         font-family: poppins;
         text-align: center;
         padding: 30px;
     }
-    .para2 h1 {
-        margin-bottom: 50px;
-    }
+    
     .form {
         margin-top: 100px;
-        width: 1199x;
+        width: 100%;
         height: 130%;
         display: flex;
         justify-content: center;
-        background-image: url(/images/img2.JPG);
+        background-image: url(img2.JPG);
     }
+    
     form {
         margin-top: 200px;
-        background-size: 400px 400px;
-        height: 500px;
-        width: 400px;
+        background-size: 600px 600px;
+        height: 600px;
+        width: 600px;
         background-color: rgb(11, 11, 11, 0.6);
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         vertical-align: center;
         border: solid rgb(0, 24, 3, 0.3) 2px;
-        border-radius: 10px;
+        border-radius: 30px;
     }
+    
     .form input {
-        height: 50px;
-        width: 200px;
+        height: 40px;
+        width: 300px;
         border-radius: 15px;
         border: solid rgb(255, 251, 251);
         text-align: center;
-        margin: 20px;
+        margin: 30px;
     }
+    
     footer {
         margin-top: auto;
         background-color: black;
@@ -711,21 +224,25 @@ iframe {
         height: 220px;
         box-shadow: 5px 4px 8px 08px rgba(1, 1, 1, .2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
     }
+    
     .button1 {
+        border: solid 3px white;
         color: wheat;
-        font-size: 15px;
-        width: 70px;
+        font-size: 30px;
+        width: 130px;
         transition: none;
-        background-color: transparent;
     }
+    
     .footerContainer {
         width: 100%;
         padding-top: 40px;
     }
+    
     .socialicons {
         display: flex;
         justify-content: center;
     }
+    
     .socialicons a {
         text-decoration: none;
         padding: 10px;
@@ -733,42 +250,50 @@ iframe {
         margin: 10px;
         border-radius: 50%;
     }
+    
     .socialicons a i {
         font-size: 1.2rem;
         color: black;
         opacity: 0.9;
     }
+    
     .socialicons a:hover {
         background-color: rgb(11, 11, 11);
         transition: 0.5s;
-        color: aliceblue;
+        color: aliceblue
     }
+    
     .socialicons a i:hover {
         color: aliceblue;
         transition: 0.5s;
-        opacity: 1;
     }
+    
     .footernav ul {
         display: flex;
         justify-content: center;
     }
+    
     .footernav ul li a {
         color: white;
         margin: 20px;
         opacity: 0.5;
         transition: 0.7s;
     }
+    
     .footernav ul li a:hover {
         opacity: 1;
     }
+    
     .footerbottom {
         background-color: black;
         padding: 10px;
         text-align: center;
     }
+    
     .footerbottom p {
         color: white;
     }
+    
     .designer {
         opacity: 0.8;
         text-transform: uppercase;
@@ -776,47 +301,72 @@ iframe {
         font-weight: 500;
         margin-left: 5px;
     }
+    
     .contactusdiv {
         margin-top: 600px;
         height: 170vh;
         width: 100%;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
     }
+    
     .contacth1 {
         text-align: center;
         font-family: poppins, sans-serif;
-        letter-spacing: 10px;
+        letter-spacing: 20px;
         color: white;
         margin: 20px;
-        font-size: 16px;
+        font-size: 20px;
     }
+    
     .subcontact {
         background-color: rgba(253, 252, 252, 0.066);
-        width: 50%;
-        height: 110vh;
+        width: 55%;
+        height: 122vh;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        overflow: hidden;
+        box-shadow: rgba(255, 255, 255, 0.092) 0px 5px 2px;
     }
+    
     .imgabout {
         width: 100%;
-        height: 500px;
+        height: 700px;
     }
+    
     .contactpara {
-        font-size: 14px;
-        width: 490px;
+        font-size: 17px;
+        width: 700px;
         height: 500px;
         font-family: poppins, serif;
         text-align: center;
-        margin-bottom: 30px;
     }
+    
     .highlights {
         height: 80vh;
-        width: 1199px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #111111;
+        margin-bottom: 30px;
         box-shadow: 5px 4px 8px 08px rgba(1, 1, 1, .2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
     }
+    
     .highlightsheading {
         font-family: poppins;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         color: var(--main-color);
     }
+    
     .forbooking {
         height: 130vh;
         width: 100%;
@@ -824,11 +374,12 @@ iframe {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-image: url(/images/img.9.JPG);
+        background-image: url(img.9.JPG);
         background-size: 100% 100%;
         box-shadow: 5px 4px 8px 08px rgba(1, 1, 1, .2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
         margin-bottom: 30px;
     }
+    
     h2 {
         opacity: 0.7;
         text-align: center;
@@ -838,10 +389,12 @@ iframe {
         color: var(--main-color);
         transition: 4s;
     }
+    
     h2:hover {
         opacity: 2.2;
         text-shadow: 20px;
     }
+    
     h3 {
         padding: 60px;
         text-align: center;
@@ -852,42 +405,49 @@ iframe {
         opacity: 0.8;
         transition: 0.4s;
     }
+    
     h3:hover {
         opacity: 2.2;
     }
+    
     .button3 {
-        width: 150px;
+        width: 170px;
+        border: solid white 3px;
         color: aliceblue;
         letter-spacing: 5px;
         font-weight: 700;
         padding: 15px;
         transition: 0.5;
-        background-color: var(--secondary-color);
-        border-radius: 20px;
     }
+    
     .button3:hover {
-        color: #fcfdfd;
+        color: #02312c;
         font-weight: 900;
-        background-color: transparent;
+        background-color: white;
+        border: solid 4px var(--secondary-color);
     }
+    
     .location {
         width: 100%;
         height: 140vh;
         background-color: black;
     }
+    
     .locationpara {
         color: white;
-        width: 360px;
-        font-size: 20px;
+        width: 450px;
+        font-size: 30px;
         margin-right: 40px;
         letter-spacing: 2px;
         font-family: poppins;
     }
+    
     .locationheading {
-        font-size: 30px;
+        font-size: 40px;
         margin-top: 80px;
         transition: no;
     }
+    
     .locationsetup {
         width: 100%;
         height: 80vh;
@@ -895,48 +455,58 @@ iframe {
         justify-content: center;
         flex-direction: row;
         align-items: center;
-        margin-top: 40px;
     }
+    
     iframe {
         border-radius: 30px;
         border: white solid 3px;
-        width: 340px;
-        height: 350px;
     }
+    
     .details {
         color: white;
         display: block;
     }
+    
     .feedback {
-        padding: 20px;
+        text-decoration: none;
+        color: var(--main-color);
+        text-align: center;
+        padding: 70px;
+        font-family: poppins;
     }
+    
     .menu-icon i {
         font-size: 25px;
         color: var(--secondary-color);
         display: none;
     }
+    
     .menu-icon {
         display: none;
         margin-right: 20px;
     }
     /* WhatsApp Button */
+    
     .whatsApp {
         position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 40px;
+        width: 50px;
+        height: 50px;
+        bottom: 30px;
         left: 40px;
         background-color: #25d366;
         color: #FFF;
         border-radius: 50px;
         text-align: center;
-        font-size: 40px;
-        box-shadow: 2px 2px 3px #999;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #2a2929;
         z-index: 100;
     }
+    
     .my-whatsApp {
-        margin-bottom: 7px;
+        margin-bottom: 1px;
+        margin-top: 9px;
     }
+    
     .skroller {
         padding-block: 8px;
         border-block: 2px solid;
@@ -946,8 +516,8 @@ iframe {
         user-select: none;
         background-color: var(--secondary-color);
         gap: 2rem;
-        max-width: 1199px;
     }
+    
     .ulslider {
         display: flex;
         align-items: center;
@@ -955,2003 +525,2428 @@ iframe {
         animation: scroll 14s linear infinite;
         gap: 2rem;
         color: white;
+        width: 100%;
     }
-}
-
-@media(max-width:991px) {
-    .navbar {
-        width: 991px;
-        font-size: 16px;
-        padding-left: 10px;
-        padding-right: 16px;
-        position: fixed;
+    
+    .skroller:first-child {
+        background-color: var(--secondary-color);
     }
-    .navdiv {
-        margin-right: 25px;
+    
+    @keyframes scroll {
+        from {
+            transform: translate(97%);
+        }
+        to {
+            transform: translate(-100%);
+        }
     }
-    ul {
-        padding: 10px;
-    }
-    li {
-        margin-left: 40px;
+    
+    .ulslider li {
+        color: white;
+        width: 100%;
         white-space: nowrap;
     }
-    li a {
-        color: var(--secondary-color);
-        font-size: 16px;
-    }
-    li a:hover {
-        text-shadow: 1px 1px 2px var(--secondary-color);
-    }
-    .booking {
-        margin-left: 30px;
-    }
-    .booking a {
-        font-size: 10px;
-    }
-    button {
-        border-radius: 8px;
-        transition-duration: 0.4s;
-        padding: 6px;
-        width: 70px;
-    }
-    .logo {
-        height: 110px;
-        width: 180px;
-    }
-    .images img {
-        margin: 10px;
-    }
-    .images img {
-        scroll-snap-align: start;
-        width: 300px;
-        height: 380px;
-    }
-    .second {
-        width: 400px;
-        height: 400px;
-    }
-    .section1 {
-        max-width: 991px;
-    }
-    .main {
-        max-width: 100%;
-    }
-    .contents {
-        margin-top: 100px;
+    
+    .ulslider li span {
         width: 100%;
-    }
-    .contents h1 {
-        padding: 40px;
-        font-size: 45px;
-    }
-    .h2 {
-        text-align: center;
-        letter-spacing: 8px;
-        font-size: 16px;
-    }
-    .para1 {
-        text-align: center;
-        padding: 50px;
-    }
-    .section2 {
-        display: block;
-        height: 100vh;
-        width: 991px;
-        margin-top: 180px;
-    }
-    .maindiv {
-        justify-items: center;
-    }
-    .maindiv .para2 {
-        width: 60%;
-        color: var(--secondary-color);
-        ;
-        padding: 30px;
-    }
-    .para2 h1 {
-        margin-bottom: 50px;
-    }
-    .form {
-        margin-top: 100px;
-        width: 991px;
-        height: 130%;
-    }
-    form {
-        margin-top: 200px;
-        background-size: 400px 400px;
-        height: 500px;
-        width: 400px;
-    }
-    .form input {
-        height: 50px;
-        width: 200px;
-    }
-    footer {
-        width: 991px;
-        height: 220px;
-    }
-    .button1 {
-        font-size: 15px;
-        width: 70px;
-        transition: none;
-    }
-    .footerContainer {
-        width: 100%;
-        padding-top: 40px;
-    }
-    .socialicons {
-        display: flex;
-        justify-content: center;
-    }
-    .socialicons a {
-        text-decoration: none;
-        padding: 10px;
-        background-color: aliceblue;
-        margin: 20px;
-        border-radius: 50%;
-    }
-    .socialicons a i {
-        font-size: 1rem;
-        color: black;
-        opacity: 0.9;
-    }
-    .socialicons a:hover {
-        background-color: rgb(11, 11, 11);
-        transition: 0.5s;
-        color: aliceblue;
-    }
-    .socialicons a i:hover {
-        color: aliceblue;
-        transition: 0.5s;
-        opacity: 1;
-    }
-    .footernav ul {
-        display: flex;
-        justify-content: center;
-    }
-    .footernav ul li a {
-        color: white;
-        margin: 20px;
-        opacity: 0.5;
-        transition: 0.7s;
-    }
-    .footernav ul li a:hover {
-        opacity: 1;
-    }
-    .footerbottom {
-        background-color: black;
-        padding: 10px;
-        text-align: center;
-    }
-    .footerbottom p {
-        color: white;
-    }
-    .designer {
-        font-weight: 500;
-        margin-left: 5px;
-    }
-    .contactusdiv {
-        margin-top: 600px;
-        height: 170vh;
-        width: 991px;
-    }
-    .contacth1 {
-        margin: 16px;
-        font-size: 16px;
-    }
-    .subcontact {
-        width: 50%;
-        height: 110vh;
-    }
-    .imgabout {
-        width: 100%;
-        height: 500px;
-    }
-    .contactpara {
-        font-size: 15px;
-        width: 450px;
-        height: 500px;
-        margin-bottom: 30px;
-        font-family: poppins, sans-serif;
-    }
-    .highlights {
-        height: 100vh;
-        width: 991px;
-    }
-    .highlightsheading {
-        margin-bottom: 30px;
-        font-family: poppins, sans-serif;
-    }
-    .forbooking {
-        height: 130vh;
-        width: 991px;
-        background-size: 100% 100%;
-        margin-bottom: 30px;
-    }
-    h2 {
-        opacity: 0.7;
-        text-align: center;
-        font-family: poppins, sans-serif;
-        font-size: 70px;
-        letter-spacing: 20px;
-        color: var(--main-color);
-        transition: 4s;
-    }
-    h2:hover {
-        opacity: 2.2;
-        text-shadow: 20px;
-    }
-    h3 {
-        padding: 60px;
-        text-align: center;
-        font-size: 50px;
-        letter-spacing: 10px;
-        opacity: 0.8;
-        transition: 0.4s;
-        font-family: poppins, sans-serif;
-    }
-    h3:hover {
-        opacity: 2.2;
-    }
-    .button3 {
-        width: 150px;
-        padding: 15px;
-        transition: 0.5;
-        border-radius: 20px;
-    }
-    .location {
-        width: 991px;
-        height: 140vh;
-    }
-    .locationpara {
-        width: 360px;
-        font-size: 20px;
-        margin-right: 40px;
-        font-family: poppins, sans-serif;
-    }
-    .locationheading {
-        font-size: 30px;
-        margin-top: 80px;
-        transition: no;
-    }
-    .locationsetup {
-        width: 100%;
-        height: 80vh;
-        margin-top: 40px;
-    }
-    iframe {
-        border-radius: 30px;
-        border: white solid 3px;
-        width: 320px;
-        height: 300px;
-    }
-    .feedback {
-        padding: 20px;
-    }
-    .feedbackh1 {
-        font-size: 26px;
-        margin: 15px;
-    }
-    .gmail {
-        font-size: 13px;
-    }
-    /* WhatsApp Button */
-    .whatsApp {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 40px;
-        left: 40px;
-        background-color: #25d366;
-        color: #FFF;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 40px;
-        box-shadow: 2px 2px 3px #999;
-        z-index: 100;
-    }
-    .my-whatsApp {
-        margin-bottom: 7px;
-    }
-    .skroller {
-        height: 60px;
-        margin-top: 300px;
-        max-width: 991px;
-        gap: 2;
-    }
-}
-
-@media(max-width:767px) {
-    .navbar {
-        width: 767px;
-        font-size: 13px;
-        padding-left: 10px;
-        padding-right: 16px;
-        position: fixed;
-    }
-    .navdiv {
-        margin-right: 20px;
-    }
-    ul {
-        padding: 10px;
-    }
-    li {
-        margin-left: 30px;
         white-space: nowrap;
     }
-    li a {
-        color: var(--secondary-color);
-        font-size: 12px;
-    }
-    li a:hover {
-        text-shadow: 1px 1px 2px var(--secondary-color);
-    }
-    .booking {
-        margin-left: 30px;
-    }
-    .booking a {
-        font-size: 10px;
-    }
-    button {
-        border-radius: 8px;
-        transition-duration: 0.4s;
-        padding: 6px;
-        width: 70px;
-    }
-    .logo {
-        height: 110px;
-        width: 150px;
-    }
-    .images img {
-        margin: 7px;
-    }
-    .images img {
-        scroll-snap-align: start;
-        width: 250px;
-        height: 340px;
-    }
-    .section1 {
-        max-width: 767px;
-    }
-    .main {
-        max-width: 100%;
-    }
-    .contents {
-        margin-top: 100px;
-        width: 100%;
-    }
-    .contents h1 {
-        padding: 40px;
-        font-size: 35px;
-    }
-    .h2 {
-        text-align: center;
-        letter-spacing: 8px;
-        font-size: 14px;
-    }
-    .para1 {
-        text-align: center;
-        padding: 50px;
-    }
-    .section2 {
-        display: block;
-        height: 100vh;
-        width: 767px;
-        margin-top: 100px;
-    }
-    .maindiv {
-        justify-items: center;
-    }
-    .maindiv .para2 {
-        width: 60%;
-        color: var(--secondary-color);
-        ;
-        padding: 30px;
-    }
-    .para2 h1 {
-        margin-bottom: 20px;
-        font-size: 24px;
-    }
-    .form {
-        margin-top: 100px;
-        width: 767px;
-        height: 130%;
-    }
-    form {
-        margin-top: 200px;
-        background-size: 400px 400px;
-        height: 450px;
-        width: 350px;
-        border-radius: 30px;
-    }
-    .form input {
-        height: 50px;
-        width: 200px;
-    }
-    footer {
-        width: 767px;
-        height: 220px;
-    }
-    .button1 {
-        font-size: 15px;
-        width: 70px;
-        transition: none;
-    }
-    .footerContainer {
-        width: 100%;
-        padding-top: 40px;
-    }
-    .socialicons {
-        display: flex;
-        justify-content: center;
-    }
-    .socialicons a {
-        text-decoration: none;
-        padding: 10px;
-        background-color: aliceblue;
-        margin: 20px;
-        border-radius: 50%;
-    }
-    .socialicons a i {
-        font-size: 1rem;
-        color: black;
-        opacity: 0.9;
-    }
-    .socialicons a:hover {
-        background-color: rgb(11, 11, 11);
-        transition: 0.5s;
-        color: aliceblue;
-    }
-    .socialicons a i:hover {
-        color: aliceblue;
-        transition: 0.5s;
-        opacity: 1;
-    }
-    .footernav ul {
-        display: flex;
-        justify-content: center;
-    }
-    .footernav ul li a {
-        color: white;
-        margin: 20px;
-        opacity: 0.5;
-        transition: 0.7s;
-    }
-    .footernav ul li a:hover {
-        opacity: 1;
-    }
-    .footerbottom {
-        background-color: black;
-        padding: 10px;
-        text-align: center;
-        margin-top: 40px;
-    }
-    .footerbottom p {
-        color: white;
-        font-size: 14px;
-    }
-    .designer {
-        font-weight: 500;
-        margin-left: 5px;
-        font-size: 14px;
-    }
-    .contactusdiv {
-        margin-top: 600px;
-        height: 170vh;
-        width: 767px;
-    }
-    .contacth1 {
-        margin: 16px;
-        font-size: 16px;
-    }
-    .subcontact {
-        width: 50%;
-        height: 100vh;
-    }
-    .imgabout {
-        width: 100%;
-        height: 450px;
-    }
-    .contactpara {
-        font-size: 12px;
-        width: 350px;
-        height: 700px;
-        margin-bottom: 10px;
-        font-family: poppins, sans-serif;
-        text-align: center;
-    }
-    .highlights {
-        height: 100vh;
-        width: 767px;
-    }
-    .highlightsheading {
-        margin-bottom: 30px;
-        font-family: poppins, sans-serif;
-    }
-    .forbooking {
-        height: 130vh;
-        width: 767px;
-        background-size: 100% 100%;
-        margin-bottom: 30px;
-    }
-    h2 {
-        opacity: 0.7;
-        text-align: center;
-        font-family: poppins, sans-serif;
-        font-size: 70px;
-        letter-spacing: 20px;
-        color: var(--main-color);
-        transition: 4s;
-    }
-    h2:hover {
-        opacity: 2.2;
-        text-shadow: 20px;
-    }
-    h3 {
-        padding: 60px;
-        text-align: center;
-        font-size: 50px;
-        letter-spacing: 10px;
-        opacity: 0.8;
-        transition: 0.4s;
-        font-family: poppins, sans-serif;
-    }
-    h3:hover {
-        opacity: 2.2;
-    }
-    .button3 {
-        width: 150px;
-        padding: 15px;
-        transition: 0.5;
-        border-radius: 20px;
-    }
-    .location {
-        width: 767px;
-        height: 140vh;
-    }
-    .locationpara {
-        width: 360px;
-        font-size: 17px;
-        margin-right: 23px;
-        font-family: poppins, sans-serif;
-    }
-    .locationheading {
-        font-size: 30px;
-        margin-top: 80px;
-        transition: no;
-    }
-    .locationsetup {
-        width: 100%;
-        height: 80vh;
-        margin-top: 20px;
-    }
-    iframe {
-        border-radius: 30px;
-        border: white solid 3px;
-        width: 400px;
-        height: 330px;
-    }
-    .feedback {
-        padding: 20px;
-    }
-    .feedbackh1 {
-        font-size: 26px;
-        margin: 15px;
-    }
-    .gmail {
-        font-size: 13px;
-    }
-    /* WhatsApp Button */
-    .whatsApp {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 30px;
-        left: 40px;
-        background-color: #25d366;
-        color: #FFF;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 40px;
-        box-shadow: 2px 2px 3px #999;
-        z-index: 100;
-    }
-    .my-whatsApp {
-        margin-bottom: 1px;
-        margin-top: 9px;
-    }
-    .skroller {
-        height: 60px;
-        margin-top: 190px;
-        max-width: 767px;
-        gap: 2;
-    }
-}
-
-@media(max-width:575px) {
-    .navbar {
-        width: 575px;
-        font-size: 13px;
-        padding-left: 10px;
-        padding-right: 10px;
-        position: fixed;
-        height: 70px;
-    }
-    .navdiv {
-        margin-right: 10px;
-    }
-    ul {
-        padding: 7px;
-    }
-    li {
-        margin-left: 20px;
-        white-space: nowrap;
-    }
-    li a {
-        color: var(--secondary-color);
-        font-size: 10px;
-    }
-    li a:hover {
-        text-shadow: 1px 1px 2px var(--secondary-color);
-    }
-    .booking {
-        margin-right: 10px;
-    }
-    .booking a {
-        font-size: 8px;
-    }
-    button {
-        border-radius: 8px;
-        transition-duration: 0.4s;
-        padding: 3px;
-        width: 70px;
-        white-space: nowrap;
-    }
-    .logo {
-        height: 70px;
-        width: 70px;
-    }
-    .images img {
-        margin: 7px;
-    }
-    .images img {
-        scroll-snap-align: start;
-        width: 230px;
-        height: 300px;
-    }
-    .section1 {
-        max-width: 575px;
-    }
-    .main {
-        max-width: 100%;
-    }
-    .contents {
-        margin-top: 100px;
-        width: 100%;
-    }
-    .contents h1 {
-        padding: 40px;
-        font-size: 35px;
-    }
-    .h2 {
-        text-align: center;
-        letter-spacing: 8px;
-        font-size: 14px;
-    }
-    .para1 {
-        text-align: center;
-        padding: 50px;
-    }
-    .section2 {
-        display: block;
-        height: 100vh;
-        width: 575px;
-        margin-top: 100px;
-    }
-    .maindiv {
-        justify-items: center;
-    }
-    .maindiv .para2 {
-        width: 60%;
-        color: var(--secondary-color);
-        ;
-        padding: 30px;
-    }
-    .para2 h1 {
-        margin-bottom: 20px;
-        font-size: 24px;
-    }
-    .form {
-        margin-top: 100px;
-        width: 575px;
-        height: 130%;
-    }
-    form {
-        margin-top: 200px;
-        background-size: 400px 400px;
-        height: 450px;
-        width: 350px;
-        border-radius: 30px;
-    }
-    .form input {
-        height: 50px;
-        width: 200px;
-    }
-    footer {
-        width: 575px;
-        height: 220px;
-    }
-    .button1 {
-        font-size: 15px;
-        width: 70px;
-        transition: none;
-    }
-    .footerContainer {
-        width: 100%;
-        padding-top: 40px;
-    }
-    .socialicons {
-        display: flex;
-        justify-content: center;
-    }
-    .socialicons a {
-        text-decoration: none;
-        padding: 10px;
-        background-color: aliceblue;
-        margin: 20px;
-        border-radius: 50%;
-    }
-    .socialicons a i {
-        font-size: 1rem;
-        color: black;
-        opacity: 0.9;
-    }
-    .socialicons a:hover {
-        background-color: rgb(11, 11, 11);
-        transition: 0.5s;
-        color: aliceblue;
-    }
-    .socialicons a i:hover {
-        color: aliceblue;
-        transition: 0.5s;
-        opacity: 1;
-    }
-    .footernav ul {
-        display: flex;
-        justify-content: center;
-    }
-    .footernav ul li a {
-        color: white;
-        margin: 20px;
-        opacity: 0.5;
-        transition: 0.7s;
-    }
-    .footernav ul li a:hover {
-        opacity: 1;
-    }
-    .footerbottom {
-        background-color: black;
-        padding: 10px;
-        text-align: center;
-        margin-top: 40px;
-    }
-    .footerbottom p {
-        color: white;
-        font-size: 14px;
-    }
-    .designer {
-        font-weight: 500;
-        margin-left: 5px;
-        font-size: 14px;
-    }
-    .contactusdiv {
-        margin-top: 600px;
-        height: 170vh;
-        width: 575px;
-    }
-    .contacth1 {
-        margin: 16px;
-        font-size: 16px;
-    }
-    .subcontact {
-        width: 50%;
-        height: 100vh;
-    }
-    .imgabout {
-        width: 100%;
-        height: 450px;
-    }
-    .contactpara {
-        font-size: 12px;
-        width: 350px;
-        height: 700px;
-        margin-bottom: 10px;
-        font-family: poppins, sans-serif;
-        text-align: center;
-    }
-    .highlights {
-        height: 100vh;
-        width: 575px;
-    }
-    .highlightsheading {
-        margin-bottom: 30px;
-        font-family: poppins, sans-serif;
-    }
-    .forbooking {
-        height: 130vh;
-        width: 575px;
-        background-size: 100% 100%;
-        margin-bottom: 30px;
-    }
-    h2 {
-        opacity: 0.7;
-        text-align: center;
-        font-family: poppins, sans-serif;
-        font-size: 70px;
-        letter-spacing: 20px;
-        color: var(--main-color);
-        transition: 4s;
-    }
-    h2:hover {
-        opacity: 2.2;
-        text-shadow: 20px;
-    }
-    h3 {
-        padding: 60px;
-        text-align: center;
-        font-size: 50px;
-        letter-spacing: 10px;
-        opacity: 0.8;
-        transition: 0.4s;
-        font-family: poppins, sans-serif;
-    }
-    h3:hover {
-        opacity: 2.2;
-    }
-    .button3 {
-        width: 150px;
-        padding: 15px;
-        transition: 0.5;
-        border-radius: 20px;
-    }
-    .location {
-        width: 575px;
-        height: 140vh;
-    }
-    .locationpara {
-        width: 360px;
-        font-size: 17px;
-        margin-right: 23px;
-        font-family: poppins, sans-serif;
-    }
-    .locationheading {
-        font-size: 30px;
-        margin-top: 80px;
-        transition: no;
-    }
-    .locationsetup {
-        width: 100%;
-        height: 80vh;
-        margin-top: 20px;
-    }
-    iframe {
-        border-radius: 30px;
-        border: white solid 3px;
-        width: 400px;
-        height: 300px;
-    }
-    .feedback {
-        padding: 20px;
-    }
-    .feedbackh1 {
-        font-size: 26px;
-        margin: 15px;
-    }
-    .gmail {
-        font-size: 13px;
-    }
-    /* WhatsApp Button */
-    .whatsApp {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 30px;
-        left: 40px;
-        background-color: #25d366;
-        color: #FFF;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 40px;
-        box-shadow: 2px 2px 3px #999;
-        z-index: 100;
-    }
-    .my-whatsApp {
-        margin-bottom: 1px;
-        margin-top: 9px;
-    }
-    .skroller {
-        height: 60px;
-        margin-top: 110px;
-        max-width: 575px;
-        gap: 2;
-    }
-}
-
-
-/*most modern phones*/
-
-@media(max-width:480px) {
-    .navbar {
-        width: 480px;
-        font-size: 13px;
-        padding-left: 10px;
-        padding-right: 10px;
-        position: fixed;
-        height: 70px;
-    }
-    .navdiv {
-        margin-right: 10px;
-    }
-    ul {
-        padding: 7px;
-    }
-    li {
-        margin-left: 20px;
-        white-space: nowrap;
-    }
-    li a {
-        color: var(--secondary-color);
-        font-size: 10px;
-    }
-    li a:hover {
-        text-shadow: 1px 1px 2px var(--secondary-color);
-    }
-    .booking {
-        margin-right: 10px;
-    }
-    .booking a {
-        font-size: 8px;
-    }
-    button {
-        border-radius: 8px;
-        transition-duration: 0.4s;
-        padding: 3px;
-        width: 70px;
-        white-space: nowrap;
-    }
-    .logo {
-        height: 70px;
-        width: 70px;
-    }
-    .images img {
-        margin: 7px;
-    }
-    .images img {
-        scroll-snap-align: start;
-        width: 230px;
-        height: 300px;
-    }
-    .section1 {
-        width: 480px;
-    }
-    .main {
-        max-width: 100%;
-    }
-    .contents {
-        margin-top: 100px;
-        width: 100%;
-    }
-    .contents h1 {
-        padding: 40px;
-        font-size: 35px;
-    }
-    .h2 {
-        text-align: center;
-        letter-spacing: 8px;
-        font-size: 14px;
-    }
-    .para1 {
-        text-align: center;
-        padding: 50px;
-    }
-    .section2 {
-        display: block;
-        height: 100vh;
-        width: 480px;
-        margin-top: 100px;
-    }
-    .maindiv {
-        justify-items: center;
-    }
-    .maindiv .para2 {
-        width: 60%;
-        color: var(--secondary-color);
-        ;
-        padding: 30px;
-    }
-    .para2 h1 {
-        margin-bottom: 20px;
-        font-size: 24px;
-    }
-    .form {
-        margin-top: 100px;
-        width: 480px;
-        height: 130%;
-    }
-    form {
-        margin-top: 200px;
-        background-size: 400px 400px;
-        height: 450px;
-        width: 350px;
-        border-radius: 30px;
-    }
-    .form input {
-        height: 50px;
-        width: 200px;
-    }
-    footer {
-        width: 480px;
-        height: 220px;
-    }
-    .button1 {
-        font-size: 15px;
-        width: 70px;
-        transition: none;
-    }
-    .footerContainer {
-        width: 100%;
-        padding-top: 40px;
-    }
-    .socialicons {
-        display: flex;
-        justify-content: center;
-    }
-    .socialicons a {
-        text-decoration: none;
-        padding: 10px;
-        background-color: aliceblue;
-        margin: 20px;
-        border-radius: 50%;
-    }
-    .socialicons a i {
-        font-size: 1.2rem;
-        color: black;
-        opacity: 0.9;
-    }
-    .socialicons a:hover {
-        background-color: rgb(11, 11, 11);
-        transition: 0.5s;
-        color: aliceblue;
-    }
-    .socialicons a i:hover {
-        color: aliceblue;
-        transition: 0.5s;
-        opacity: 1;
-    }
-    .footernav ul {
-        display: flex;
-        justify-content: center;
-    }
-    .footernav ul li a {
-        color: white;
-        margin: 20px;
-        opacity: 0.5;
-        transition: 0.7s;
-    }
-    .footernav ul li a:hover {
-        opacity: 1;
-    }
-    .footerbottom {
-        background-color: black;
-        padding: 10px;
-        text-align: center;
-        margin-top: 40px;
-    }
-    .footerbottom p {
-        color: white;
-        font-size: 11px;
-    }
-    .designer {
-        font-weight: 500;
-        margin-left: 5px;
-        font-size: 13px;
-    }
-    .contactusdiv {
-        margin-top: 800px;
-        height: 120vh;
-        width: 480px;
-    }
-    .contacth1 {
-        margin: 12px;
-        font-size: 13px;
-    }
-    .subcontact {
-        width: 80%;
-        height: 90vh;
-        border-radius: 20px;
-    }
-    .imgabout {
-        width: 100%;
-        height: 400px;
-    }
-    .contactpara {
-        font-size: 10px;
-        width: 330px;
-        height: 500px;
-        margin-bottom: 10px;
-        font-family: poppins, sans-serif;
-        text-align: center;
-    }
-    .highlights {
-        height: 100vh;
-        width: 480px;
-    }
-    .highlightsheading {
-        margin-bottom: 30px;
-        font-family: poppins, sans-serif;
-    }
-    .forbooking {
-        height: 130vh;
-        width: 480px;
-        background-size: 100% 100%;
-        margin-bottom: 30px;
-    }
-    h2 {
-        opacity: 0.7;
-        text-align: center;
-        font-family: poppins, sans-serif;
-        font-size: 70px;
-        letter-spacing: 20px;
-        color: var(--main-color);
-        transition: 4s;
-    }
-    h2:hover {
-        opacity: 2.2;
-        text-shadow: 20px;
-    }
-    h3 {
-        padding: 60px;
-        text-align: center;
-        font-size: 50px;
-        letter-spacing: 10px;
-        opacity: 0.8;
-        transition: 0.4s;
-        font-family: poppins, sans-serif;
-    }
-    h3:hover {
-        opacity: 2.2;
-    }
-    .button3 {
-        width: 150px;
-        padding: 15px;
-        transition: 0.5;
-        border-radius: 20px;
-    }
-    .location {
-        width: 480px;
-        height: 140vh;
-    }
-    .locationpara {
-        width: 360px;
-        font-size: 12px;
-        margin-right: 23px;
-        font-family: poppins, sans-serif;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .locationheading {
-        font-size: 15px;
-        margin-top: 80px;
-        transition: no;
-        letter-spacing: 2px;
-    }
-    .locationsetup {
-        width: 100%;
-        height: 60vh;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-    }
-    iframe {
-        border-radius: 30px;
-        border: white solid 3px;
-        width: 270px;
-        height: 240px;
-    }
-    .feedback {
-        padding: 20px;
-    }
-    .feedbackh1 {
-        font-size: 26px;
-        margin: 15px;
-    }
-    .gmail {
-        font-size: 13px;
-    }
-    /* WhatsApp Button */
-    .whatsApp {
-        position: fixed;
-        width: 50px;
-        height: 50px;
-        bottom: 30px;
-        left: 40px;
-        background-color: #25d366;
-        color: #FFF;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 2px 2px 3px #2a2929;
-        z-index: 100;
-    }
-    .my-whatsApp {
-        margin-bottom: 1px;
-        margin-top: 9px;
-    }
-    .skroller {
-        height: 50px;
-        margin-top: 160px;
-        max-width: 480px;
-        gap: 2;
-    }
-}
-
-
-/* for iphone se older phones*/
-
-@media(max-width:375px) {
-    .navbar {
-        width: 375px;
-        font-size: 13px;
-        padding-left: 10px;
-        position: fixed;
-        height: 70px;
-    }
-    .navdiv {
-        padding: 0;
-        width: 375px;
-        margin-right: 0;
-        background-color: white;
-    }
-    ul {
-        padding: 7px;
-    }
-    li {
-        margin-left: 20px;
-        white-space: nowrap;
-        padding: 20px;
-        color: white;
-    }
-    li a {
-        color: var(--main-color);
-        font-size: 10px;
-    }
-    #menuList {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        justify-content: flex-start;
-        top: 70px;
-        left: -200px;
-        height: 100%;
-        background-color: rgb(2, 49, 44, 0.8);
-        width: 200px;
-        overflow: hidden;
-        transition: all 0.5s ease-in-out;
-    }
-    li a:hover {
-        text-shadow: 1px 1px 2px var(--secondary-color);
-    }
-    .booking {
-        margin-right: 4px;
-    }
-    .booking a {
-        font-size: 8px;
-        font-weight: normal;
-    }
-    button {
-        border-radius: 4px;
-        transition-duration: 0.4s;
-        width: 60px;
-        white-space: nowrap;
-        height: 30px;
-        text-align: center;
-        margin-left: 100px;
-    }
-    .logo {
-        height: 70px;
-        width: 70px;
-    }
-    .images img {
-        margin: 2px;
-    }
-    .images img {
-        scroll-snap-align: start;
-        width: 200px;
-        height: 250px;
-    }
-    .section1 {
-        width: 375px;
-    }
-    .main {
-        width: 375px;
-    }
-    .contents {
-        margin-top: 100px;
-        width: 100%;
-    }
-    .contents h1 {
-        padding: 40px;
-        font-size: 25px;
-    }
-    .h2 {
-        text-align: center;
-        letter-spacing: 8px;
-        font-size: 12px;
-        letter-spacing: 3px;
-    }
-    .para1 {
-        text-align: center;
-        padding: 20px;
-        font-size: 13px;
-    }
-    .section2 {
-        display: block;
-        height: 100vh;
-        width: 375px;
-        margin-top: 10px;
-    }
-    .maindiv {
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        width: 375px;
-    }
-    .maindiv .para2 {
-        width: 375px;
-        color: var(--secondary-color);
-        ;
-        padding: 30px;
-        font-size: 16px;
-        margin-left: 40px;
-        text-align: center;
-    }
-    .para2 h1 {
-        margin-bottom: 20px;
-        font-size: 24px;
-    }
-    .form {
-        width: 375px;
-        height: 100%;
-    }
-    form {
-        margin-top: 100px;
-        background-size: 400px 400px;
-        height: 400px;
-        width: 300px;
-        border-radius: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(11, 11, 11, 0.6);
-    }
-    .form input {
-        height: 40px;
-        width: 180px;
-    }
-    footer {
-        width: 375px;
-        height: 220px;
-    }
-    .button1 {
-        font-size: 11px;
-        width: 60px;
-        transition: none;
-        margin-right: 90px;
-    }
-    .footerContainer {
-        width: 100%;
-        padding-top: 40px;
-    }
-    .socialicons {
-        display: flex;
-        justify-content: center;
-    }
-    .socialicons a {
-        text-decoration: none;
-        padding: 10px;
-        background-color: aliceblue;
-        margin: 7px;
-        border-radius: 50%;
-    }
-    .socialicons a i {
-        font-size: 1rem;
-        color: black;
-        opacity: 0.9;
-    }
-    .socialicons a:hover {
-        background-color: rgb(11, 11, 11);
-        transition: 0.5s;
-        color: aliceblue;
-    }
-    .socialicons a i:hover {
-        color: aliceblue;
-        transition: 0.5s;
-        opacity: 1;
-    }
-    .footerul li {
-        font-size: 10px;
-    }
-    .footernav ul li a {
-        color: white;
-        opacity: 0.5;
-        transition: 0.7s;
-        font-size: 10px;
-        margin: 10px;
-    }
-    .footernav ul li a:hover {
-        opacity: 1;
-    }
-    .footerbottom {
-        background-color: black;
-        padding: 10px;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .footerbottom p {
-        color: white;
-        font-size: 10px;
-    }
-    .designer {
-        font-weight: 500;
-        margin-left: 5px;
-        font-size: 12px;
-    }
-    .contactusdiv {
-        margin-top: 430px;
-        height: 100vh;
-        width: 375px;
-    }
-    .contacth1 {
-        margin: 12px;
-        font-size: 8px;
-        letter-spacing: 2px;
-    }
-    .subcontact {
-        width: 70%;
-        height: 70vh;
-        border-radius: 20px;
-    }
-    .imgabout {
-        width: 100%;
-        height: 300px;
-    }
-    .contactpara {
-        font-size: 8px;
-        width: 220px;
-        height: 300px;
-        margin-bottom: 10px;
-        font-family: poppins, sans-serif;
-        text-align: center;
-        text-align: center;
-    }
-    .highlights {
-        height: 70vh;
-        width: 375px;
-    }
-    .highlightsheading {
-        margin-bottom: 30px;
-        font-family: poppins, sans-serif;
-        font-size: 14px;
-    }
-    .forbooking {
-        height: 130vh;
-        width: 375px;
-        background-size: 100% 100%;
-        margin-bottom: 30px;
-    }
-    h2 {
-        opacity: 0.7;
-        text-align: center;
-        font-family: poppins, sans-serif;
-        font-size: 50px;
-        letter-spacing: 10px;
-        color: var(--main-color);
-        transition: 4s;
-    }
-    h2:hover {
-        opacity: 2.2;
-        text-shadow: 20px;
-    }
-    h3 {
-        padding: 60px;
-        text-align: center;
-        font-size: 30px;
-        letter-spacing: 10px;
-        opacity: 0.8;
-        transition: 0.4s;
-        font-family: poppins, sans-serif;
-    }
-    h3:hover {
-        opacity: 2.2;
-    }
-    .button3 {
-        width: 200px;
-        padding: 15px;
-        transition: 0.5;
-        border-radius: 20px;
-        height: 50px;
-        text-align: center;
-        margin-right: 100px;
-    }
-    .location {
-        width: 375px;
-        height: 140vh;
-    }
-    .locationpara {
-        width: 330px;
-        font-size: 10px;
-        margin-right: 23px;
-        font-family: poppins, sans-serif;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .locationheading {
-        font-size: 13px;
-        margin-top: 80px;
-        transition: no;
-        letter-spacing: 2px;
-    }
-    .locationsetup {
-        width: 100%;
-        height: 60vh;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-    }
-    iframe {
-        border-radius: 30px;
-        border: white solid 3px;
-        width: 250px;
-        height: 220px;
-    }
-    .feedback {
-        padding: 20px;
-    }
-    .feedbackh1 {
-        font-size: 23px;
-        margin: 15px;
-    }
-    .gmail {
-        font-size: 12px;
-    }
-    /* WhatsApp Button */
-    .whatsApp {
-        position: fixed;
-        width: 50px;
-        height: 50px;
-        bottom: 30px;
-        left: 40px;
-        background-color: #25d366;
-        color: #FFF;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 2px 2px 3px #2a2929;
-        z-index: 100;
-    }
-    .my-whatsApp {
-        margin-bottom: 1px;
-        margin-top: 9px;
-    }
-    .skroller {
-        height: 40px;
-        margin-top: 160px;
-        width: 375px;
-        gap: 2;
-        display: flex;
-        align-items: center;
-    }
-    .menu-icon .fa-bars {
-        font-size: 17px;
-        color: #02312c;
-        display: block;
-        cursor: pointer;
-        ;
-    }
-    .menu-icon {
-        display: block;
-        color: #02312c;
-        margin-right: 30px;
-    }
-    .para2 h1 {
-        font-size: 20px;
-    }
+    
     .fa-xmark {
-        visibility: visible;
-        color: white;
-        font-size: 17px;
-        padding: 10px;
-        margin-left: 130px;
+        visibility: hidden;
+    }
+    
+    @media(max-width:1199px) {
+        .navbar {
+            max-width: 1199px;
+            font-size: 18px;
+            padding-left: 10px;
+            padding-right: 16px;
+            position: fixed;
+        }
+        .navdiv {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 30px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            list-style-type: none;
+            align-items: center;
+        }
+        li {
+            margin-left: 40px;
+            white-space: nowrap;
+        }
+        li a {
+            color: var(--secondary-color);
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 0.7px;
+        }
+        li a:hover {
+            text-shadow: 1px 1px 2px var(--secondary-color);
+        }
+        .booking {
+            margin-left: 30px;
+        }
+        .booking a {
+            font-size: 10px;
+        }
+        button {
+            border-radius: 8px;
+            transition-duration: 0.4s;
+            padding: 6px;
+            width: 70px;
+            border: var(--secondary-color) solid;
+            background: var(--secondary-color);
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .logo {
+            height: 110px;
+            width: 180px;
+        }
+        .images img {
+            margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+        }
+        .images img {
+            scroll-snap-align: start;
+            width: 300px;
+            height: 380px;
+        }
+        .second {
+            width: 400px;
+            height: 400px;
+        }
+        .section1 {
+            max-width: 1199px;
+        }
+        .main {
+            max-width: 100%;
+        }
+        .contents {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            width: 100%;
+        }
+        .contents h1 {
+            padding: 40px;
+            font-size: 45px;
+        }
+        .h2 {
+            text-align: center;
+            letter-spacing: 8px;
+            font-size: 18px;
+        }
+        .para1 {
+            text-align: center;
+            padding: 50px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            font-family: poppins;
+            color: var(--secondary-color);
+        }
+        .section2 {
+            display: block;
+            height: 100vh;
+            width: 100%;
+            margin-top: 180px;
+        }
+        .maindiv {
+            justify-items: center;
+        }
+        .maindiv .para2 {
+            width: 60%;
+            color: var(--secondary-color);
+            font-size: 20px;
+            font-family: poppins;
+            text-align: center;
+            padding: 30px;
+        }
+        .para2 h1 {
+            margin-bottom: 50px;
+        }
+        .form {
+            margin-top: 100px;
+            width: 1199x;
+            height: 130%;
+            display: flex;
+            justify-content: center;
+            background-image: url(img2.JPG);
+        }
+        form {
+            margin-top: 200px;
+            background-size: 400px 400px;
+            height: 500px;
+            width: 400px;
+            background-color: rgb(11, 11, 11, 0.6);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: center;
+            border: solid rgb(0, 24, 3, 0.3) 2px;
+            border-radius: 10px;
+        }
+        .form input {
+            height: 50px;
+            width: 200px;
+            border-radius: 15px;
+            border: solid rgb(255, 251, 251);
+            text-align: center;
+            margin: 20px;
+        }
+        footer {
+            margin-top: auto;
+            background-color: black;
+            width: 100%;
+            height: 220px;
+            box-shadow: 5px 4px 8px 08px rgba(1, 1, 1, .2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+        }
+        .button1 {
+            color: wheat;
+            font-size: 15px;
+            width: 70px;
+            transition: none;
+            background-color: transparent;
+        }
+        .footerContainer {
+            width: 100%;
+            padding-top: 40px;
+        }
+        .socialicons {
+            display: flex;
+            justify-content: center;
+        }
+        .socialicons a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: aliceblue;
+            margin: 10px;
+            border-radius: 50%;
+        }
+        .socialicons a i {
+            font-size: 1.2rem;
+            color: black;
+            opacity: 0.9;
+        }
+        .socialicons a:hover {
+            background-color: rgb(11, 11, 11);
+            transition: 0.5s;
+            color: aliceblue;
+        }
+        .socialicons a i:hover {
+            color: aliceblue;
+            transition: 0.5s;
+            opacity: 1;
+        }
+        .footernav ul {
+            display: flex;
+            justify-content: center;
+        }
+        .footernav ul li a {
+            color: white;
+            margin: 20px;
+            opacity: 0.5;
+            transition: 0.7s;
+        }
+        .footernav ul li a:hover {
+            opacity: 1;
+        }
+        .footerbottom {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+        }
+        .footerbottom p {
+            color: white;
+        }
+        .designer {
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+            margin-left: 5px;
+        }
+        .contactusdiv {
+            margin-top: 600px;
+            height: 170vh;
+            width: 100%;
+            display: flex;
+        }
+        .contacth1 {
+            text-align: center;
+            font-family: poppins, sans-serif;
+            letter-spacing: 10px;
+            color: white;
+            margin: 20px;
+            font-size: 16px;
+        }
+        .subcontact {
+            background-color: rgba(253, 252, 252, 0.066);
+            width: 50%;
+            height: 110vh;
+        }
+        .imgabout {
+            width: 100%;
+            height: 500px;
+        }
+        .contactpara {
+            font-size: 14px;
+            width: 490px;
+            height: 500px;
+            font-family: poppins, serif;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .highlights {
+            height: 80vh;
+            width: 1199px;
+            box-shadow: 5px 4px 8px 08px rgba(1, 1, 1, .2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+        }
+        .highlightsheading {
+            font-family: poppins;
+            margin-bottom: 30px;
+            color: var(--main-color);
+        }
+        .forbooking {
+            height: 130vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url(img.9.JPG);
+            background-size: 100% 100%;
+            box-shadow: 5px 4px 8px 08px rgba(1, 1, 1, .2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 30px;
+        }
+        h2 {
+            opacity: 0.7;
+            text-align: center;
+            font-family: poppins;
+            font-size: 70px;
+            letter-spacing: 20px;
+            color: var(--main-color);
+            transition: 4s;
+        }
+        h2:hover {
+            opacity: 2.2;
+            text-shadow: 20px;
+        }
+        h3 {
+            padding: 60px;
+            text-align: center;
+            font-family: poppins;
+            font-size: 50px;
+            letter-spacing: 10px;
+            color: var(--main-color);
+            opacity: 0.8;
+            transition: 0.4s;
+        }
+        h3:hover {
+            opacity: 2.2;
+        }
+        .button3 {
+            width: 150px;
+            color: aliceblue;
+            letter-spacing: 5px;
+            font-weight: 700;
+            padding: 15px;
+            transition: 0.5;
+            background-color: var(--secondary-color);
+            border-radius: 20px;
+        }
+        .button3:hover {
+            color: #fcfdfd;
+            font-weight: 900;
+            background-color: transparent;
+        }
+        .location {
+            width: 100%;
+            height: 140vh;
+            background-color: black;
+        }
+        .locationpara {
+            color: white;
+            width: 360px;
+            font-size: 20px;
+            margin-right: 40px;
+            letter-spacing: 2px;
+            font-family: poppins;
+        }
+        .locationheading {
+            font-size: 30px;
+            margin-top: 80px;
+            transition: no;
+        }
+        .locationsetup {
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 40px;
+        }
+        iframe {
+            border-radius: 30px;
+            border: white solid 3px;
+            width: 340px;
+            height: 350px;
+        }
+        .details {
+            color: white;
+            display: block;
+        }
+        .feedback {
+            padding: 20px;
+        }
+        .menu-icon i {
+            font-size: 25px;
+            color: var(--secondary-color);
+            display: none;
+        }
+        .menu-icon {
+            display: none;
+            margin-right: 20px;
+        }
+        /* WhatsApp Button */
+        .whatsApp {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 40px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+        .my-whatsApp {
+            margin-bottom: 7px;
+        }
+        .skroller {
+            padding-block: 8px;
+            border-block: 2px solid;
+            height: 60px;
+            margin-top: 300px;
+            overflow: hidden;
+            user-select: none;
+            background-color: var(--secondary-color);
+            gap: 2rem;
+            max-width: 1199px;
+        }
+        .ulslider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: scroll 14s linear infinite;
+            gap: 2rem;
+            color: white;
+        }
+    }
+    
+    @media(max-width:991px) {
+        .navbar {
+            width: 991px;
+            font-size: 16px;
+            padding-left: 10px;
+            padding-right: 16px;
+            position: fixed;
+        }
+        .navdiv {
+            margin-right: 25px;
+        }
+        ul {
+            padding: 10px;
+        }
+        li {
+            margin-left: 40px;
+            white-space: nowrap;
+        }
+        li a {
+            color: var(--secondary-color);
+            font-size: 16px;
+        }
+        li a:hover {
+            text-shadow: 1px 1px 2px var(--secondary-color);
+        }
+        .booking {
+            margin-left: 30px;
+        }
+        .booking a {
+            font-size: 10px;
+        }
+        button {
+            border-radius: 8px;
+            transition-duration: 0.4s;
+            padding: 6px;
+            width: 70px;
+        }
+        .logo {
+            height: 110px;
+            width: 180px;
+        }
+        .images img {
+            margin: 10px;
+        }
+        .images img {
+            scroll-snap-align: start;
+            width: 300px;
+            height: 380px;
+        }
+        .second {
+            width: 400px;
+            height: 400px;
+        }
+        .section1 {
+            max-width: 991px;
+        }
+        .main {
+            max-width: 100%;
+        }
+        .contents {
+            margin-top: 100px;
+            width: 100%;
+        }
+        .contents h1 {
+            padding: 40px;
+            font-size: 45px;
+        }
+        .h2 {
+            text-align: center;
+            letter-spacing: 8px;
+            font-size: 16px;
+        }
+        .para1 {
+            text-align: center;
+            padding: 50px;
+        }
+        .section2 {
+            display: block;
+            height: 100vh;
+            width: 991px;
+            margin-top: 180px;
+        }
+        .maindiv {
+            justify-items: center;
+        }
+        .maindiv .para2 {
+            width: 60%;
+            color: var(--secondary-color);
+            ;
+            padding: 30px;
+        }
+        .para2 h1 {
+            margin-bottom: 50px;
+        }
+        .form {
+            margin-top: 100px;
+            width: 991px;
+            height: 130%;
+        }
+        form {
+            margin-top: 200px;
+            background-size: 400px 400px;
+            height: 500px;
+            width: 400px;
+        }
+        .form input {
+            height: 50px;
+            width: 200px;
+        }
+        footer {
+            width: 991px;
+            height: 220px;
+        }
+        .button1 {
+            font-size: 15px;
+            width: 70px;
+            transition: none;
+        }
+        .footerContainer {
+            width: 100%;
+            padding-top: 40px;
+        }
+        .socialicons {
+            display: flex;
+            justify-content: center;
+        }
+        .socialicons a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: aliceblue;
+            margin: 20px;
+            border-radius: 50%;
+        }
+        .socialicons a i {
+            font-size: 1rem;
+            color: black;
+            opacity: 0.9;
+        }
+        .socialicons a:hover {
+            background-color: rgb(11, 11, 11);
+            transition: 0.5s;
+            color: aliceblue;
+        }
+        .socialicons a i:hover {
+            color: aliceblue;
+            transition: 0.5s;
+            opacity: 1;
+        }
+        .footernav ul {
+            display: flex;
+            justify-content: center;
+        }
+        .footernav ul li a {
+            color: white;
+            margin: 20px;
+            opacity: 0.5;
+            transition: 0.7s;
+        }
+        .footernav ul li a:hover {
+            opacity: 1;
+        }
+        .footerbottom {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+        }
+        .footerbottom p {
+            color: white;
+        }
+        .designer {
+            font-weight: 500;
+            margin-left: 5px;
+        }
+        .contactusdiv {
+            margin-top: 600px;
+            height: 170vh;
+            width: 991px;
+        }
+        .contacth1 {
+            margin: 16px;
+            font-size: 16px;
+        }
+        .subcontact {
+            width: 50%;
+            height: 110vh;
+        }
+        .imgabout {
+            width: 100%;
+            height: 500px;
+        }
+        .contactpara {
+            font-size: 15px;
+            width: 450px;
+            height: 500px;
+            margin-bottom: 30px;
+            font-family: poppins, sans-serif;
+        }
+        .highlights {
+            height: 100vh;
+            width: 991px;
+        }
+        .highlightsheading {
+            margin-bottom: 30px;
+            font-family: poppins, sans-serif;
+        }
+        .forbooking {
+            height: 130vh;
+            width: 991px;
+            background-size: 100% 100%;
+            margin-bottom: 30px;
+        }
+        h2 {
+            opacity: 0.7;
+            text-align: center;
+            font-family: poppins, sans-serif;
+            font-size: 70px;
+            letter-spacing: 20px;
+            color: var(--main-color);
+            transition: 4s;
+        }
+        h2:hover {
+            opacity: 2.2;
+            text-shadow: 20px;
+        }
+        h3 {
+            padding: 60px;
+            text-align: center;
+            font-size: 50px;
+            letter-spacing: 10px;
+            opacity: 0.8;
+            transition: 0.4s;
+            font-family: poppins, sans-serif;
+        }
+        h3:hover {
+            opacity: 2.2;
+        }
+        .button3 {
+            width: 150px;
+            padding: 15px;
+            transition: 0.5;
+            border-radius: 20px;
+        }
+        .location {
+            width: 991px;
+            height: 140vh;
+        }
+        .locationpara {
+            width: 360px;
+            font-size: 20px;
+            margin-right: 40px;
+            font-family: poppins, sans-serif;
+        }
+        .locationheading {
+            font-size: 30px;
+            margin-top: 80px;
+            transition: no;
+        }
+        .locationsetup {
+            width: 100%;
+            height: 80vh;
+            margin-top: 40px;
+        }
+        iframe {
+            border-radius: 30px;
+            border: white solid 3px;
+            width: 320px;
+            height: 300px;
+        }
+        .feedback {
+            padding: 20px;
+        }
+        .feedbackh1 {
+            font-size: 26px;
+            margin: 15px;
+        }
+        .gmail {
+            font-size: 13px;
+        }
+        /* WhatsApp Button */
+        .whatsApp {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 40px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+        .my-whatsApp {
+            margin-bottom: 7px;
+        }
+        .skroller {
+            height: 60px;
+            margin-top: 300px;
+            max-width: 991px;
+            gap: 2;
+        }
+    }
+    
+    @media(max-width:767px) {
+        .navbar {
+            width: 767px;
+            font-size: 13px;
+            padding-left: 10px;
+            padding-right: 16px;
+            position: fixed;
+        }
+        .navdiv {
+            margin-right: 20px;
+        }
+        ul {
+            padding: 10px;
+        }
+        li {
+            margin-left: 30px;
+            white-space: nowrap;
+        }
+        li a {
+            color: var(--secondary-color);
+            font-size: 12px;
+        }
+        li a:hover {
+            text-shadow: 1px 1px 2px var(--secondary-color);
+        }
+        .booking {
+            margin-left: 30px;
+        }
+        .booking a {
+            font-size: 10px;
+        }
+        button {
+            border-radius: 8px;
+            transition-duration: 0.4s;
+            padding: 6px;
+            width: 70px;
+        }
+        .logo {
+            height: 110px;
+            width: 150px;
+        }
+        .images img {
+            margin: 7px;
+        }
+        .images img {
+            scroll-snap-align: start;
+            width: 250px;
+            height: 340px;
+        }
+        .section1 {
+            max-width: 767px;
+        }
+        .main {
+            max-width: 100%;
+        }
+        .contents {
+            margin-top: 100px;
+            width: 100%;
+        }
+        .contents h1 {
+            padding: 40px;
+            font-size: 35px;
+        }
+        .h2 {
+            text-align: center;
+            letter-spacing: 8px;
+            font-size: 14px;
+        }
+        .para1 {
+            text-align: center;
+            padding: 50px;
+        }
+        .section2 {
+            display: block;
+            height: 100vh;
+            width: 767px;
+            margin-top: 100px;
+        }
+        .maindiv {
+            justify-items: center;
+        }
+        .maindiv .para2 {
+            width: 60%;
+            color: var(--secondary-color);
+            ;
+            padding: 30px;
+        }
+        .para2 h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .form {
+            margin-top: 100px;
+            width: 767px;
+            height: 130%;
+        }
+        form {
+            margin-top: 200px;
+            background-size: 400px 400px;
+            height: 450px;
+            width: 350px;
+            border-radius: 30px;
+        }
+        .form input {
+            height: 50px;
+            width: 200px;
+        }
+        footer {
+            width: 767px;
+            height: 220px;
+        }
+        .button1 {
+            font-size: 15px;
+            width: 70px;
+            transition: none;
+        }
+        .footerContainer {
+            width: 100%;
+            padding-top: 40px;
+        }
+        .socialicons {
+            display: flex;
+            justify-content: center;
+        }
+        .socialicons a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: aliceblue;
+            margin: 20px;
+            border-radius: 50%;
+        }
+        .socialicons a i {
+            font-size: 1rem;
+            color: black;
+            opacity: 0.9;
+        }
+        .socialicons a:hover {
+            background-color: rgb(11, 11, 11);
+            transition: 0.5s;
+            color: aliceblue;
+        }
+        .socialicons a i:hover {
+            color: aliceblue;
+            transition: 0.5s;
+            opacity: 1;
+        }
+        .footernav ul {
+            display: flex;
+            justify-content: center;
+        }
+        .footernav ul li a {
+            color: white;
+            margin: 20px;
+            opacity: 0.5;
+            transition: 0.7s;
+        }
+        .footernav ul li a:hover {
+            opacity: 1;
+        }
+        .footerbottom {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .footerbottom p {
+            color: white;
+            font-size: 14px;
+        }
+        .designer {
+            font-weight: 500;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        .contactusdiv {
+            margin-top: 600px;
+            height: 170vh;
+            width: 767px;
+        }
+        .contacth1 {
+            margin: 16px;
+            font-size: 16px;
+        }
+        .subcontact {
+            width: 50%;
+            height: 100vh;
+        }
+        .imgabout {
+            width: 100%;
+            height: 450px;
+        }
+        .contactpara {
+            font-size: 12px;
+            width: 350px;
+            height: 700px;
+            margin-bottom: 10px;
+            font-family: poppins, sans-serif;
+            text-align: center;
+        }
+        .highlights {
+            height: 100vh;
+            width: 767px;
+        }
+        .highlightsheading {
+            margin-bottom: 30px;
+            font-family: poppins, sans-serif;
+        }
+        .forbooking {
+            height: 130vh;
+            width: 767px;
+            background-size: 100% 100%;
+            margin-bottom: 30px;
+        }
+        h2 {
+            opacity: 0.7;
+            text-align: center;
+            font-family: poppins, sans-serif;
+            font-size: 70px;
+            letter-spacing: 20px;
+            color: var(--main-color);
+            transition: 4s;
+        }
+        h2:hover {
+            opacity: 2.2;
+            text-shadow: 20px;
+        }
+        h3 {
+            padding: 60px;
+            text-align: center;
+            font-size: 50px;
+            letter-spacing: 10px;
+            opacity: 0.8;
+            transition: 0.4s;
+            font-family: poppins, sans-serif;
+        }
+        h3:hover {
+            opacity: 2.2;
+        }
+        .button3 {
+            width: 150px;
+            padding: 15px;
+            transition: 0.5;
+            border-radius: 20px;
+        }
+        .location {
+            width: 767px;
+            height: 140vh;
+        }
+        .locationpara {
+            width: 360px;
+            font-size: 17px;
+            margin-right: 23px;
+            font-family: poppins, sans-serif;
+        }
+        .locationheading {
+            font-size: 30px;
+            margin-top: 80px;
+            transition: no;
+        }
+        .locationsetup {
+            width: 100%;
+            height: 80vh;
+            margin-top: 20px;
+        }
+        iframe {
+            border-radius: 30px;
+            border: white solid 3px;
+            width: 400px;
+            height: 330px;
+        }
+        .feedback {
+            padding: 20px;
+        }
+        .feedbackh1 {
+            font-size: 26px;
+            margin: 15px;
+        }
+        .gmail {
+            font-size: 13px;
+        }
+        /* WhatsApp Button */
+        .whatsApp {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 40px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+        .my-whatsApp {
+            margin-bottom: 1px;
+            margin-top: 9px;
+        }
+        .skroller {
+            height: 60px;
+            margin-top: 190px;
+            max-width: 767px;
+            gap: 2;
+        }
+    }
+    
+    @media(max-width:575px) {
+        .navbar {
+            width: 575px;
+            font-size: 13px;
+            padding-left: 10px;
+            padding-right: 10px;
+            position: fixed;
+            height: 70px;
+        }
+        .navdiv {
+            margin-right: 10px;
+        }
+        ul {
+            padding: 7px;
+        }
+        li {
+            margin-left: 20px;
+            white-space: nowrap;
+        }
+        li a {
+            color: var(--secondary-color);
+            font-size: 10px;
+        }
+        li a:hover {
+            text-shadow: 1px 1px 2px var(--secondary-color);
+        }
+        .booking {
+            margin-right: 10px;
+        }
+        .booking a {
+            font-size: 8px;
+        }
+        button {
+            border-radius: 8px;
+            transition-duration: 0.4s;
+            padding: 3px;
+            width: 70px;
+            white-space: nowrap;
+        }
+        .logo {
+            height: 70px;
+            width: 70px;
+        }
+        .images img {
+            margin: 7px;
+        }
+        .images img {
+            scroll-snap-align: start;
+            width: 230px;
+            height: 300px;
+        }
+        .section1 {
+            max-width: 575px;
+        }
+        .main {
+            max-width: 100%;
+        }
+        .contents {
+            margin-top: 100px;
+            width: 100%;
+        }
+        .contents h1 {
+            padding: 40px;
+            font-size: 35px;
+        }
+        .h2 {
+            text-align: center;
+            letter-spacing: 8px;
+            font-size: 14px;
+        }
+        .para1 {
+            text-align: center;
+            padding: 50px;
+        }
+        .section2 {
+            display: block;
+            height: 100vh;
+            width: 575px;
+            margin-top: 100px;
+        }
+        .maindiv {
+            justify-items: center;
+        }
+        .maindiv .para2 {
+            width: 60%;
+            color: var(--secondary-color);
+            ;
+            padding: 30px;
+        }
+        .para2 h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .form {
+            margin-top: 100px;
+            width: 575px;
+            height: 130%;
+        }
+        form {
+            margin-top: 200px;
+            background-size: 400px 400px;
+            height: 450px;
+            width: 350px;
+            border-radius: 30px;
+        }
+        .form input {
+            height: 50px;
+            width: 200px;
+        }
+        footer {
+            width: 575px;
+            height: 220px;
+        }
+        .button1 {
+            font-size: 15px;
+            width: 70px;
+            transition: none;
+        }
+        .footerContainer {
+            width: 100%;
+            padding-top: 40px;
+        }
+        .socialicons {
+            display: flex;
+            justify-content: center;
+        }
+        .socialicons a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: aliceblue;
+            margin: 20px;
+            border-radius: 50%;
+        }
+        .socialicons a i {
+            font-size: 1rem;
+            color: black;
+            opacity: 0.9;
+        }
+        .socialicons a:hover {
+            background-color: rgb(11, 11, 11);
+            transition: 0.5s;
+            color: aliceblue;
+        }
+        .socialicons a i:hover {
+            color: aliceblue;
+            transition: 0.5s;
+            opacity: 1;
+        }
+        .footernav ul {
+            display: flex;
+            justify-content: center;
+        }
+        .footernav ul li a {
+            color: white;
+            margin: 20px;
+            opacity: 0.5;
+            transition: 0.7s;
+        }
+        .footernav ul li a:hover {
+            opacity: 1;
+        }
+        .footerbottom {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .footerbottom p {
+            color: white;
+            font-size: 14px;
+        }
+        .designer {
+            font-weight: 500;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        .contactusdiv {
+            margin-top: 600px;
+            height: 170vh;
+            width: 575px;
+        }
+        .contacth1 {
+            margin: 16px;
+            font-size: 16px;
+        }
+        .subcontact {
+            width: 50%;
+            height: 100vh;
+        }
+        .imgabout {
+            width: 100%;
+            height: 450px;
+        }
+        .contactpara {
+            font-size: 12px;
+            width: 350px;
+            height: 700px;
+            margin-bottom: 10px;
+            font-family: poppins, sans-serif;
+            text-align: center;
+        }
+        .highlights {
+            height: 100vh;
+            width: 575px;
+        }
+        .highlightsheading {
+            margin-bottom: 30px;
+            font-family: poppins, sans-serif;
+        }
+        .forbooking {
+            height: 130vh;
+            width: 575px;
+            background-size: 100% 100%;
+            margin-bottom: 30px;
+        }
+        h2 {
+            opacity: 0.7;
+            text-align: center;
+            font-family: poppins, sans-serif;
+            font-size: 70px;
+            letter-spacing: 20px;
+            color: var(--main-color);
+            transition: 4s;
+        }
+        h2:hover {
+            opacity: 2.2;
+            text-shadow: 20px;
+        }
+        h3 {
+            padding: 60px;
+            text-align: center;
+            font-size: 50px;
+            letter-spacing: 10px;
+            opacity: 0.8;
+            transition: 0.4s;
+            font-family: poppins, sans-serif;
+        }
+        h3:hover {
+            opacity: 2.2;
+        }
+        .button3 {
+            width: 150px;
+            padding: 15px;
+            transition: 0.5;
+            border-radius: 20px;
+        }
+        .location {
+            width: 575px;
+            height: 140vh;
+        }
+        .locationpara {
+            width: 360px;
+            font-size: 17px;
+            margin-right: 23px;
+            font-family: poppins, sans-serif;
+        }
+        .locationheading {
+            font-size: 30px;
+            margin-top: 80px;
+            transition: no;
+        }
+        .locationsetup {
+            width: 100%;
+            height: 80vh;
+            margin-top: 20px;
+        }
+        iframe {
+            border-radius: 30px;
+            border: white solid 3px;
+            width: 400px;
+            height: 300px;
+        }
+        .feedback {
+            padding: 20px;
+        }
+        .feedbackh1 {
+            font-size: 26px;
+            margin: 15px;
+        }
+        .gmail {
+            font-size: 13px;
+        }
+        /* WhatsApp Button */
+        .whatsApp {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 40px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+        .my-whatsApp {
+            margin-bottom: 1px;
+            margin-top: 9px;
+        }
+        .skroller {
+            height: 60px;
+            margin-top: 110px;
+            max-width: 575px;
+            gap: 2;
+        }
+    }
+    /*most modern phones*/
+    
+    @media(max-width:480px) {
+        .navbar {
+            width: 480px;
+            font-size: 13px;
+            padding-left: 10px;
+            padding-right: 10px;
+            position: fixed;
+            height: 70px;
+        }
+        .navdiv {
+            margin-right: 10px;
+        }
+        ul {
+            padding: 7px;
+        }
+        li {
+            margin-left: 20px;
+            white-space: nowrap;
+        }
+        li a {
+            color: var(--secondary-color);
+            font-size: 10px;
+        }
+        li a:hover {
+            text-shadow: 1px 1px 2px var(--secondary-color);
+        }
+        .booking {
+            margin-right: 10px;
+        }
+        .booking a {
+            font-size: 8px;
+        }
+        button {
+            border-radius: 8px;
+            transition-duration: 0.4s;
+            padding: 3px;
+            width: 70px;
+            white-space: nowrap;
+        }
+        .logo {
+            height: 70px;
+            width: 70px;
+        }
+        .images img {
+            margin: 7px;
+        }
+        .images img {
+            scroll-snap-align: start;
+            width: 230px;
+            height: 300px;
+        }
+        .section1 {
+            width: 480px;
+        }
+        .main {
+            max-width: 100%;
+        }
+        .contents {
+            margin-top: 100px;
+            width: 100%;
+        }
+        .contents h1 {
+            padding: 40px;
+            font-size: 35px;
+        }
+        .h2 {
+            text-align: center;
+            letter-spacing: 8px;
+            font-size: 14px;
+        }
+        .para1 {
+            text-align: center;
+            padding: 50px;
+        }
+        .section2 {
+            display: block;
+            height: 100vh;
+            width: 480px;
+            margin-top: 100px;
+        }
+        .maindiv {
+            justify-items: center;
+        }
+        .maindiv .para2 {
+            width: 60%;
+            color: var(--secondary-color);
+            ;
+            padding: 30px;
+        }
+        .para2 h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .form {
+            margin-top: 100px;
+            width: 480px;
+            height: 130%;
+        }
+        form {
+            margin-top: 200px;
+            background-size: 400px 400px;
+            height: 450px;
+            width: 350px;
+            border-radius: 30px;
+        }
+        .form input {
+            height: 50px;
+            width: 200px;
+        }
+        footer {
+            width: 480px;
+            height: 220px;
+        }
+        .button1 {
+            font-size: 15px;
+            width: 70px;
+            transition: none;
+        }
+        .footerContainer {
+            width: 100%;
+            padding-top: 40px;
+        }
+        .socialicons {
+            display: flex;
+            justify-content: center;
+        }
+        .socialicons a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: aliceblue;
+            margin: 20px;
+            border-radius: 50%;
+        }
+        .socialicons a i {
+            font-size: 1.2rem;
+            color: black;
+            opacity: 0.9;
+        }
+        .socialicons a:hover {
+            background-color: rgb(11, 11, 11);
+            transition: 0.5s;
+            color: aliceblue;
+        }
+        .socialicons a i:hover {
+            color: aliceblue;
+            transition: 0.5s;
+            opacity: 1;
+        }
+        .footernav ul {
+            display: flex;
+            justify-content: center;
+        }
+        .footernav ul li a {
+            color: white;
+            margin: 20px;
+            opacity: 0.5;
+            transition: 0.7s;
+        }
+        .footernav ul li a:hover {
+            opacity: 1;
+        }
+        .footerbottom {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .footerbottom p {
+            color: white;
+            font-size: 11px;
+        }
+        .designer {
+            font-weight: 500;
+            margin-left: 5px;
+            font-size: 13px;
+        }
+        .contactusdiv {
+            margin-top: 800px;
+            height: 120vh;
+            width: 480px;
+        }
+        .contacth1 {
+            margin: 12px;
+            font-size: 13px;
+        }
+        .subcontact {
+            width: 80%;
+            height: 90vh;
+            border-radius: 20px;
+        }
+        .imgabout {
+            width: 100%;
+            height: 400px;
+        }
+        .contactpara {
+            font-size: 10px;
+            width: 330px;
+            height: 500px;
+            margin-bottom: 10px;
+            font-family: poppins, sans-serif;
+            text-align: center;
+        }
+        .highlights {
+            height: 100vh;
+            width: 480px;
+        }
+        .highlightsheading {
+            margin-bottom: 30px;
+            font-family: poppins, sans-serif;
+        }
+        .forbooking {
+            height: 130vh;
+            width: 480px;
+            background-size: 100% 100%;
+            margin-bottom: 30px;
+        }
+        h2 {
+            opacity: 0.7;
+            text-align: center;
+            font-family: poppins, sans-serif;
+            font-size: 70px;
+            letter-spacing: 20px;
+            color: var(--main-color);
+            transition: 4s;
+        }
+        h2:hover {
+            opacity: 2.2;
+            text-shadow: 20px;
+        }
+        h3 {
+            padding: 60px;
+            text-align: center;
+            font-size: 50px;
+            letter-spacing: 10px;
+            opacity: 0.8;
+            transition: 0.4s;
+            font-family: poppins, sans-serif;
+        }
+        h3:hover {
+            opacity: 2.2;
+        }
+        .button3 {
+            width: 150px;
+            padding: 15px;
+            transition: 0.5;
+            border-radius: 20px;
+        }
+        .location {
+            width: 480px;
+            height: 140vh;
+        }
+        .locationpara {
+            width: 360px;
+            font-size: 12px;
+            margin-right: 23px;
+            font-family: poppins, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .locationheading {
+            font-size: 15px;
+            margin-top: 80px;
+            transition: no;
+            letter-spacing: 2px;
+        }
+        .locationsetup {
+            width: 100%;
+            height: 60vh;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+        }
+        iframe {
+            border-radius: 30px;
+            border: white solid 3px;
+            width: 270px;
+            height: 240px;
+        }
+        .feedback {
+            padding: 20px;
+        }
+        .feedbackh1 {
+            font-size: 26px;
+            margin: 15px;
+        }
+        .gmail {
+            font-size: 13px;
+        }
+        /* WhatsApp Button */
+        .whatsApp {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 30px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #2a2929;
+            z-index: 100;
+        }
+        .my-whatsApp {
+            margin-bottom: 1px;
+            margin-top: 9px;
+        }
+        .skroller {
+            height: 50px;
+            margin-top: 160px;
+            max-width: 480px;
+            gap: 2;
+        }
+    }
+    /* for iphone se older phones*/
+    
+    @media(max-width:375px) {
+        .navbar {
+            width: 375px;
+            font-size: 13px;
+            padding-left: 10px;
+            position: fixed;
+            height: 70px;
+        }
+        .navdiv {
+            padding: 0;
+            width: 375px;
+            margin-right: 0;
+            background-color: white;
+        }
+        ul {
+            padding: 7px;
+        }
+        li {
+            margin-left: 20px;
+            white-space: nowrap;
+            padding: 20px;
+            color: white;
+        }
+        li a {
+            color: var(--main-color);
+            font-size: 10px;
+        }
+        #menuList {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            justify-content: flex-start;
+            top: 70px;
+            left: -200px;
+            height: 100%;
+            background-color: rgb(2, 49, 44, 0.8);
+            width: 200px;
+            overflow: hidden;
+            transition: all 0.5s ease-in-out;
+        }
+        li a:hover {
+            text-shadow: 1px 1px 2px var(--secondary-color);
+        }
+        .booking {
+            margin-right: 4px;
+        }
+        .booking a {
+            font-size: 8px;
+            font-weight: normal;
+        }
+        button {
+            border-radius: 4px;
+            transition-duration: 0.4s;
+            width: 60px;
+            white-space: nowrap;
+            height: 30px;
+            text-align: center;
+            margin-left: 100px;
+        }
+        .logo {
+            height: 70px;
+            width: 70px;
+        }
+        .images img {
+            margin: 2px;
+        }
+        .images img {
+            scroll-snap-align: start;
+            width: 200px;
+            height: 250px;
+        }
+        .section1 {
+            width: 375px;
+        }
+        .main {
+            width: 375px;
+        }
+        .contents {
+            margin-top: 100px;
+            width: 100%;
+        }
+        .contents h1 {
+            padding: 40px;
+            font-size: 25px;
+        }
+        .h2 {
+            text-align: center;
+            letter-spacing: 8px;
+            font-size: 12px;
+            letter-spacing: 3px;
+        }
+        .para1 {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+        }
+        .section2 {
+            display: block;
+            height: 100vh;
+            width: 375px;
+            margin-top: 10px;
+        }
+        .maindiv {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            width: 375px;
+        }
+        .maindiv .para2 {
+            width: 375px;
+            color: var(--secondary-color);
+            ;
+            padding: 30px;
+            font-size: 16px;
+            margin-left: 40px;
+            text-align: center;
+        }
+        .para2 h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .form {
+            width: 375px;
+            height: 100%;
+        }
+        form {
+            margin-top: 100px;
+            background-size: 400px 400px;
+            height: 400px;
+            width: 300px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(11, 11, 11, 0.6);
+        }
+        .form input {
+            height: 40px;
+            width: 180px;
+        }
+        footer {
+            width: 375px;
+            height: 220px;
+        }
+        .button1 {
+            font-size: 11px;
+            width: 60px;
+            transition: none;
+            margin-right: 90px;
+        }
+        .footerContainer {
+            width: 100%;
+            padding-top: 40px;
+        }
+        .socialicons {
+            display: flex;
+            justify-content: center;
+        }
+        .socialicons a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: aliceblue;
+            margin: 7px;
+            border-radius: 50%;
+        }
+        .socialicons a i {
+            font-size: 1rem;
+            color: black;
+            opacity: 0.9;
+        }
+        .socialicons a:hover {
+            background-color: rgb(11, 11, 11);
+            transition: 0.5s;
+            color: aliceblue;
+        }
+        .socialicons a i:hover {
+            color: aliceblue;
+            transition: 0.5s;
+            opacity: 1;
+        }
+        .footerul li {
+            font-size: 10px;
+        }
+        .footernav ul li a {
+            color: white;
+            opacity: 0.5;
+            transition: 0.7s;
+            font-size: 10px;
+            margin: 10px;
+        }
+        .footernav ul li a:hover {
+            opacity: 1;
+        }
+        .footerbottom {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footerbottom p {
+            color: white;
+            font-size: 10px;
+        }
+        .designer {
+            font-weight: 500;
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        .contactusdiv {
+            margin-top: 430px;
+            height: 100vh;
+            width: 375px;
+        }
+        .contacth1 {
+            margin: 12px;
+            font-size: 8px;
+            letter-spacing: 2px;
+        }
+        .subcontact {
+            width: 70%;
+            height: 70vh;
+            border-radius: 20px;
+        }
+        .imgabout {
+            width: 100%;
+            height: 300px;
+        }
+        .contactpara {
+            font-size: 8px;
+            width: 220px;
+            height: 300px;
+            margin-bottom: 10px;
+            font-family: poppins, sans-serif;
+            text-align: center;
+            text-align: center;
+        }
+        .highlights {
+            height: 70vh;
+            width: 375px;
+        }
+        .highlightsheading {
+            margin-bottom: 30px;
+            font-family: poppins, sans-serif;
+            font-size: 14px;
+        }
+        .forbooking {
+            height: 130vh;
+            width: 375px;
+            background-size: 100% 100%;
+            margin-bottom: 30px;
+        }
+        h2 {
+            opacity: 0.7;
+            text-align: center;
+            font-family: poppins, sans-serif;
+            font-size: 50px;
+            letter-spacing: 10px;
+            color: var(--main-color);
+            transition: 4s;
+        }
+        h2:hover {
+            opacity: 2.2;
+            text-shadow: 20px;
+        }
+        h3 {
+            padding: 60px;
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 10px;
+            opacity: 0.8;
+            transition: 0.4s;
+            font-family: poppins, sans-serif;
+        }
+        h3:hover {
+            opacity: 2.2;
+        }
+        .button3 {
+            width: 200px;
+            padding: 15px;
+            transition: 0.5;
+            border-radius: 20px;
+            height: 50px;
+            text-align: center;
+            margin-right: 100px;
+        }
+        .location {
+            width: 375px;
+            height: 140vh;
+        }
+        .locationpara {
+            width: 330px;
+            font-size: 10px;
+            margin-right: 23px;
+            font-family: poppins, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .locationheading {
+            font-size: 13px;
+            margin-top: 80px;
+            transition: no;
+            letter-spacing: 2px;
+        }
+        .locationsetup {
+            width: 100%;
+            height: 60vh;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+        }
+        iframe {
+            border-radius: 30px;
+            border: white solid 3px;
+            width: 250px;
+            height: 220px;
+        }
+        .feedback {
+            padding: 20px;
+        }
+        .feedbackh1 {
+            font-size: 23px;
+            margin: 15px;
+        }
+        .gmail {
+            font-size: 12px;
+        }
+        /* WhatsApp Button */
+        .whatsApp {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 30px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #2a2929;
+            z-index: 100;
+        }
+        .my-whatsApp {
+            margin-bottom: 1px;
+            margin-top: 9px;
+        }
+        .skroller {
+            height: 40px;
+            margin-top: 160px;
+            width: 375px;
+            gap: 2;
+            display: flex;
+            align-items: center;
+        }
+        .menu-icon .fa-bars {
+            font-size: 17px;
+            color: #02312c;
+            display: block;
+            cursor: pointer;
+            ;
+        }
+        .menu-icon {
+            display: block;
+            color: #02312c;
+            margin-right: 30px;
+        }
+        .para2 h1 {
+            font-size: 20px;
+        }
+        .fa-xmark {
+            visibility: visible;
+            color: white;
+            font-size: 17px;
+            padding: 10px;
+            margin-left: 130px;
+        }
+    }
+    
+    @media(max-width:321px) {
+        .navbar {
+            max-width: 320px;
+            font-size: 13px;
+            padding-left: 10px;
+            position: fixed;
+            height: 70px;
+        }
+        .navdiv {
+            padding: 0;
+            width: 320px;
+            margin-right: 0;
+            background-color: white;
+        }
+        ul {
+            padding: 7px;
+        }
+        li {
+            margin-left: 20px;
+            white-space: nowrap;
+            padding: 20px;
+            color: white;
+        }
+        li a {
+            color: var(--main-color);
+            font-size: 10px;
+        }
+        #menuList {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            justify-content: flex-start;
+            top: 70px;
+            left: -200px;
+            height: 100%;
+            background-color: rgb(2, 49, 44, 0.8);
+            width: 200px;
+            overflow: hidden;
+            transition: all 0.5s ease-in-out;
+        }
+        li a:hover {
+            text-shadow: 1px 1px 2px var(--secondary-color);
+        }
+        .booking {
+            margin-right: 4px;
+        }
+        .booking a {
+            font-size: 8px;
+            font-weight: normal;
+        }
+        button {
+            border-radius: 4px;
+            transition-duration: 0.4s;
+            width: 60px;
+            white-space: nowrap;
+            height: 30px;
+            text-align: center;
+            margin-left: 100px;
+        }
+        .logo {
+            height: 70px;
+            width: 70px;
+        }
+        .images img {
+            margin: 2px;
+        }
+        .images img {
+            scroll-snap-align: start;
+            width: 200px;
+            height: 250px;
+        }
+        .section1 {
+            width: 320px;
+        }
+        .main {
+            width: 320px;
+        }
+        .contents {
+            margin-top: 100px;
+            width: 100%;
+        }
+        .contents h1 {
+            padding: 40px;
+            font-size: 25px;
+        }
+        .h2 {
+            text-align: center;
+            letter-spacing: 8px;
+            font-size: 12px;
+            letter-spacing: 3px;
+        }
+        .para1 {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+        }
+        .section2 {
+            display: block;
+            height: 100vh;
+            width: 320px;
+            margin-top: 10px;
+        }
+        .maindiv {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            width: 320px;
+        }
+        .maindiv .para2 {
+            width: 320px;
+            color: var(--secondary-color);
+            ;
+            padding: 30px;
+            font-size: 16px;
+            margin-left: 40px;
+            text-align: center;
+        }
+        .para2 h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .form {
+            width: 320px;
+            height: 100%;
+        }
+        form {
+            margin-top: 100px;
+            background-size: 400px 400px;
+            height: 400px;
+            width: 300px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(11, 11, 11, 0.6);
+        }
+        .form input {
+            height: 40px;
+            width: 180px;
+        }
+        footer {
+            width: 320px;
+            height: 220px;
+        }
+        .button1 {
+            font-size: 11px;
+            width: 60px;
+            transition: none;
+            margin-right: 90px;
+        }
+        .footerContainer {
+            width: 100%;
+            padding-top: 40px;
+        }
+        .socialicons {
+            display: flex;
+            justify-content: center;
+        }
+        .socialicons a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: aliceblue;
+            margin: 7px;
+            border-radius: 50%;
+        }
+        .socialicons a i {
+            font-size: 1rem;
+            color: black;
+            opacity: 0.9;
+        }
+        .socialicons a:hover {
+            background-color: rgb(11, 11, 11);
+            transition: 0.5s;
+            color: aliceblue;
+        }
+        .socialicons a i:hover {
+            color: aliceblue;
+            transition: 0.5s;
+            opacity: 1;
+        }
+        .footerul li {
+            font-size: 10px;
+        }
+        .footernav ul li a {
+            color: white;
+            opacity: 0.5;
+            transition: 0.7s;
+            font-size: 10px;
+            margin: 10px;
+        }
+        .footernav ul li a:hover {
+            opacity: 1;
+        }
+        .footerbottom {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footerbottom p {
+            color: white;
+            font-size: 10px;
+        }
+        .designer {
+            font-weight: 500;
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        .contactusdiv {
+            margin-top: 430px;
+            height: 100vh;
+            width: 320px;
+        }
+        .contacth1 {
+            margin: 12px;
+            font-size: 8px;
+            letter-spacing: 2px;
+        }
+        .subcontact {
+            width: 70%;
+            height: 70vh;
+            border-radius: 20px;
+        }
+        .imgabout {
+            width: 100%;
+            height: 300px;
+        }
+        .contactpara {
+            font-size: 8px;
+            width: 220px;
+            height: 300px;
+            margin-bottom: 10px;
+            font-family: poppins, sans-serif;
+            text-align: center;
+            text-align: center;
+        }
+        .highlights {
+            height: 70vh;
+            width: 320px;
+        }
+        .highlightsheading {
+            margin-bottom: 30px;
+            font-family: poppins, sans-serif;
+            font-size: 14px;
+        }
+        .forbooking {
+            height: 130vh;
+            width: 320px;
+            background-size: 100% 100%;
+            margin-bottom: 30px;
+        }
+        h2 {
+            opacity: 0.7;
+            text-align: center;
+            font-family: poppins, sans-serif;
+            font-size: 50px;
+            letter-spacing: 10px;
+            color: var(--main-color);
+            transition: 4s;
+        }
+        h2:hover {
+            opacity: 2.2;
+            text-shadow: 20px;
+        }
+        h3 {
+            padding: 60px;
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 10px;
+            opacity: 0.8;
+            transition: 0.4s;
+            font-family: poppins, sans-serif;
+        }
+        h3:hover {
+            opacity: 2.2;
+        }
+        .button3 {
+            width: 200px;
+            padding: 15px;
+            transition: 0.5;
+            border-radius: 20px;
+            height: 50px;
+            text-align: center;
+            margin-right: 100px;
+        }
+        .location {
+            width: 320px;
+            height: 140vh;
+        }
+        .locationpara {
+            width: 330px;
+            font-size: 10px;
+            margin-right: 23px;
+            font-family: poppins, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .locationheading {
+            font-size: 13px;
+            margin-top: 80px;
+            transition: no;
+            letter-spacing: 2px;
+        }
+        .locationsetup {
+            width: 100%;
+            height: 60vh;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+        }
+        iframe {
+            border-radius: 30px;
+            border: white solid 3px;
+            width: 250px;
+            height: 220px;
+        }
+        .feedback {
+            padding: 20px;
+        }
+        .feedbackh1 {
+            font-size: 23px;
+            margin: 15px;
+        }
+        .gmail {
+            font-size: 12px;
+        }
+        /* WhatsApp Button */
+        .whatsApp {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 30px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #2a2929;
+            z-index: 100;
+        }
+        .my-whatsApp {
+            margin-bottom: 1px;
+            margin-top: 9px;
+        }
+        .skroller {
+            height: 40px;
+            margin-top: 160px;
+            width: 320px;
+            gap: 2;
+            display: flex;
+            align-items: center;
+        }
+        .menu-icon .fa-bars {
+            font-size: 17px;
+            color: #02312c;
+            display: block;
+            cursor: pointer;
+            ;
+        }
+        .menu-icon {
+            display: block;
+            color: #02312c;
+            margin-right: 30px;
+        }
+        .para2 h1 {
+            font-size: 20px;
+        }
+        .fa-xmark {
+            visibility: visible;
+            color: white;
+            font-size: 17px;
+            padding: 10px;
+            margin-left: 130px;
+        }
     }
-}
-
-@media(max-width:321px) {
-    .navbar {
-        max-width: 320px;
-        font-size: 13px;
-        padding-left: 10px;
-        position: fixed;
-        height: 70px;
-    }
-    .navdiv {
-        padding: 0;
-        width: 320px;
-        margin-right: 0;
-        background-color: white;
-    }
-    ul {
-        padding: 7px;
-    }
-    li {
-        margin-left: 20px;
-        white-space: nowrap;
-        padding: 20px;
-        color: white;
-    }
-    li a {
-        color: var(--main-color);
-        font-size: 10px;
-    }
-    #menuList {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        justify-content: flex-start;
-        top: 70px;
-        left: -200px;
-        height: 100%;
-        background-color: rgb(2, 49, 44, 0.8);
-        width: 200px;
-        overflow: hidden;
-        transition: all 0.5s ease-in-out;
-    }
-    li a:hover {
-        text-shadow: 1px 1px 2px var(--secondary-color);
-    }
-    .booking {
-        margin-right: 4px;
-    }
-    .booking a {
-        font-size: 8px;
-        font-weight: normal;
-    }
-    button {
-        border-radius: 4px;
-        transition-duration: 0.4s;
-        width: 60px;
-        white-space: nowrap;
-        height: 30px;
-        text-align: center;
-        margin-left: 100px;
-    }
-    .logo {
-        height: 70px;
-        width: 70px;
-    }
-    .images img {
-        margin: 2px;
-    }
-    .images img {
-        scroll-snap-align: start;
-        width: 200px;
-        height: 250px;
-    }
-    .section1 {
-        width: 320px;
-    }
-    .main {
-        width: 320px;
-    }
-    .contents {
-        margin-top: 100px;
-        width: 100%;
-    }
-    .contents h1 {
-        padding: 40px;
-        font-size: 25px;
-    }
-    .h2 {
-        text-align: center;
-        letter-spacing: 8px;
-        font-size: 12px;
-        letter-spacing: 3px;
-    }
-    .para1 {
-        text-align: center;
-        padding: 20px;
-        font-size: 13px;
-    }
-    .section2 {
-        display: block;
-        height: 100vh;
-        width: 320px;
-        margin-top: 10px;
-    }
-    .maindiv {
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        width: 320px;
-    }
-    .maindiv .para2 {
-        width: 320px;
-        color: var(--secondary-color);
-        ;
-        padding: 30px;
-        font-size: 16px;
-        margin-left: 40px;
-        text-align: center;
-    }
-    .para2 h1 {
-        margin-bottom: 20px;
-        font-size: 24px;
-    }
-    .form {
-        width: 320px;
-        height: 100%;
-    }
-    form {
-        margin-top: 100px;
-        background-size: 400px 400px;
-        height: 400px;
-        width: 300px;
-        border-radius: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(11, 11, 11, 0.6);
-    }
-    .form input {
-        height: 40px;
-        width: 180px;
-    }
-    footer {
-        width: 320px;
-        height: 220px;
-    }
-    .button1 {
-        font-size: 11px;
-        width: 60px;
-        transition: none;
-        margin-right: 90px;
-    }
-    .footerContainer {
-        width: 100%;
-        padding-top: 40px;
-    }
-    .socialicons {
-        display: flex;
-        justify-content: center;
-    }
-    .socialicons a {
-        text-decoration: none;
-        padding: 10px;
-        background-color: aliceblue;
-        margin: 7px;
-        border-radius: 50%;
-    }
-    .socialicons a i {
-        font-size: 1rem;
-        color: black;
-        opacity: 0.9;
-    }
-    .socialicons a:hover {
-        background-color: rgb(11, 11, 11);
-        transition: 0.5s;
-        color: aliceblue;
-    }
-    .socialicons a i:hover {
-        color: aliceblue;
-        transition: 0.5s;
-        opacity: 1;
-    }
-    .footerul li {
-        font-size: 10px;
-    }
-    .footernav ul li a {
-        color: white;
-        opacity: 0.5;
-        transition: 0.7s;
-        font-size: 10px;
-        margin: 10px;
-    }
-    .footernav ul li a:hover {
-        opacity: 1;
-    }
-    .footerbottom {
-        background-color: black;
-        padding: 10px;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .footerbottom p {
-        color: white;
-        font-size: 10px;
-    }
-    .designer {
-        font-weight: 500;
-        margin-left: 5px;
-        font-size: 12px;
-    }
-    .contactusdiv {
-        margin-top: 430px;
-        height: 100vh;
-        width: 320px;
-    }
-    .contacth1 {
-        margin: 12px;
-        font-size: 8px;
-        letter-spacing: 2px;
-    }
-    .subcontact {
-        width: 70%;
-        height: 70vh;
-        border-radius: 20px;
-    }
-    .imgabout {
-        width: 100%;
-        height: 300px;
-    }
-    .contactpara {
-        font-size: 8px;
-        width: 220px;
-        height: 300px;
-        margin-bottom: 10px;
-        font-family: poppins, sans-serif;
-        text-align: center;
-        text-align: center;
-    }
-    .highlights {
-        height: 70vh;
-        width: 320px;
-    }
-    .highlightsheading {
-        margin-bottom: 30px;
-        font-family: poppins, sans-serif;
-        font-size: 14px;
-    }
-    .forbooking {
-        height: 130vh;
-        width: 320px;
-        background-size: 100% 100%;
-        margin-bottom: 30px;
-    }
-    h2 {
-        opacity: 0.7;
-        text-align: center;
-        font-family: poppins, sans-serif;
-        font-size: 50px;
-        letter-spacing: 10px;
-        color: var(--main-color);
-        transition: 4s;
-    }
-    h2:hover {
-        opacity: 2.2;
-        text-shadow: 20px;
-    }
-    h3 {
-        padding: 60px;
-        text-align: center;
-        font-size: 30px;
-        letter-spacing: 10px;
-        opacity: 0.8;
-        transition: 0.4s;
-        font-family: poppins, sans-serif;
-    }
-    h3:hover {
-        opacity: 2.2;
-    }
-    .button3 {
-        width: 200px;
-        padding: 15px;
-        transition: 0.5;
-        border-radius: 20px;
-        height: 50px;
-        text-align: center;
-        margin-right: 100px;
-    }
-    .location {
-        width: 320px;
-        height: 140vh;
-    }
-    .locationpara {
-        width: 330px;
-        font-size: 10px;
-        margin-right: 23px;
-        font-family: poppins, sans-serif;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .locationheading {
-        font-size: 13px;
-        margin-top: 80px;
-        transition: no;
-        letter-spacing: 2px;
-    }
-    .locationsetup {
-        width: 100%;
-        height: 60vh;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-    }
-    iframe {
-        border-radius: 30px;
-        border: white solid 3px;
-        width: 250px;
-        height: 220px;
-    }
-    .feedback {
-        padding: 20px;
-    }
-    .feedbackh1 {
-        font-size: 23px;
-        margin: 15px;
-    }
-    .gmail {
-        font-size: 12px;
-    }
-    /* WhatsApp Button */
-    .whatsApp {
-        position: fixed;
-        width: 50px;
-        height: 50px;
-        bottom: 30px;
-        left: 40px;
-        background-color: #25d366;
-        color: #FFF;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 2px 2px 3px #2a2929;
-        z-index: 100;
-    }
-    .my-whatsApp {
-        margin-bottom: 1px;
-        margin-top: 9px;
-    }
-    .skroller {
-        height: 40px;
-        margin-top: 160px;
-        width: 320px;
-        gap: 2;
-        display: flex;
-        align-items: center;
-    }
-    .menu-icon .fa-bars {
-        font-size: 17px;
-        color: #02312c;
-        display: block;
-        cursor: pointer;
-        ;
-    }
-    .menu-icon {
-        display: block;
-        color: #02312c;
-        margin-right: 30px;
-    }
-    .para2 h1 {
-        font-size: 20px;
-    }
-    .fa-xmark {
-        visibility: visible;
-        color: white;
-        font-size: 17px;
-        padding: 10px;
-        margin-left: 130px;
-    }
-}
