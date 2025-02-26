@@ -1983,7 +1983,9 @@
             margin-top: 100px;
         }
         .maindiv {
+            display: flex;
             justify-items: center;
+            align-items: center;
         }
         .maindiv .para2 {
             width: 60%;
@@ -2091,6 +2093,7 @@
             width: 80%;
             height: 90vh;
             border-radius: 20px;
+            background-color: #2a2929;
         }
         .imgabout {
             width: 100%;
