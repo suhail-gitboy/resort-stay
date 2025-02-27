@@ -1922,6 +1922,9 @@
                 padding-right: 10px;
                 position: fixed;
                 height: 70px;
+                z-index: 999;
+                animation: scrollchange;
+                animation-timeline: scroll(y);
             }
             #menuList {
                 display: flex;
@@ -1949,10 +1952,16 @@
                 white-space: nowrap;
                 color: white;
                 padding: 20px;
+                z-index: 999;
+                animation: listchange;
+                animation-timeline: scroll(y);
             }
             li a {
                 color: var(--main-color);
                 font-size: 10px;
+                z-index: 999;
+                animation: listchange;
+                animation-timeline: scroll(y);
             }
             li a:hover {
                 text-shadow: 1px 1px 2px var(--secondary-color);
